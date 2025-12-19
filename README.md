@@ -75,9 +75,28 @@ This application is a specialized **Decision Support System (DSS)** designed for
     *   The **Market Engine** boosts courses with high job vacancy counts.
 4.  **Result**: A prioritized list of Degree or Diploma options, complete with a "Skill Bridge" and "Professional Roadmap."
 
+## 🏗️ System Architecture
+
+For a detailed visual breakdown of the NLP pipeline, Hybrid Engine, and Eligibility Filter, please see our [Architecture Documentation](docs/architecture.md).
+
+## 📸 Example Scenarios
+
+The system dynamically adapts its output based on the student's eligibility status:
+
+| Student Profile | Input | System Result | Strategy |
+| :--- | :--- | :--- | :--- |
+| **Grade A (Premium)** | "I want to be a doctor." | **Eligible**: Bachelor of Medicine | **Professional Roadmap**: Internships, KMA Registration. |
+| **Grade C (Average)** | "I want to be a doctor." | **Not Eligible**: Medicine | **Recovery**: Suggests *Diploma in Clinical Medicine* as a bridge. |
+| **Grade B (Aspirational)** | "I want to study CS." | **Aspirational**: Computer Science | **Gap Analysis**: "You missed Math Requirement by 1 point. Consider a Bridging Course." |
+
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## ⚠️ Disclaimer
+
+*   **Referential Data**: Recommendations are based on historical KUCCPS data and scraped market trends. They do not guarantee university placement or employment.
+*   **Independent Verification**: Users should always cross-check requirements with the official [KUCCPS Portal](https://students.kuccps.net/).
 
 ## 📝 License
 
