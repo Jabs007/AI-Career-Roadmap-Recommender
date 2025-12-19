@@ -10,138 +10,10 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 from thefuzz import fuzz
 
-# -------------------------------
-# 🔍 Department Classification
-# -------------------------------
-department_keywords = {
-    "Information Technology": [
-        "developer", "software", "ict", "data", "ai", "machine learning", "cyber", "programmer",
-        "analyst", "information technology", "computer", "network", "support", "systems",
-        "cloud", "security", "database", "web", "frontend", "backend", "fullstack"
-    ],
-    "Business": [
-        "business", "operations", "strategy", "manager", "consultant", "entrepreneur",
-        "logistics", "supply chain"
-    ],
-    "Education": [
-        "teacher", "lecturer", "education", "instructor", "tutor", "training",
-        "curriculum", "school", "dean", "academic", "principal"
-    ],
-    "Finance & Accounting": [
-        "accountant", "finance", "auditor", "economist", "investment", "bookkeeper",
-        "financial", "tax", "cpa", "controller", "budget", "accounting"
-    ],
-    "Healthcare & Medical": [
-        "nurse", "doctor", "pharmacist", "medical", "clinical", "health", "surgeon",
-        "therapist", "dental", "radiologist", "physician", "lab technician", "veterinary",
-        "nutritionist", "psychiatrist"
-    ],
-    "Engineering": [
-        "engineer", "mechanical", "civil", "electrical", "technician", "biomedical",
-        "mechatronic", "chemical", "project engineer", "structural",
-        "industrial", "automotive", "manufacturing", "telecommunication"
-    ],
-    "Marketing & Sales": [
-        "marketing", "seo", "sales", "brand", "advertising", "digital", "content",
-        "promotion", "telemarketing", "social media", "copywriter", "account executive"
-    ],
-    "Administration & Support": [
-        "admin", "clerk", "secretary", "assistant", "receptionist", "office manager",
-        "front desk", "executive assistant", "records"
-    ],
-    "Human Resources": [
-        "hr", "human resource", "recruiter", "talent", "personnel", "staffing",
-        "employee relations", "talent acquisition", "people operations"
-    ],
-    "Legal & Compliance": [
-        "lawyer", "legal", "attorney", "advocate", "compliance", "legal officer", "paralegal",
-        "regulatory", "litigation", "contract", "corporate law"
-    ],
-    "Arts & Media": [
-        "artist", "musician", "painter", "graphic designer", "illustrator", "videographer",
-        "photographer", "media", "journalist", "writer", "editor", "communication",
-        "film", "animation", "content creator"
-    ],
-    "Agriculture & Environmental": [
-        "agriculture", "horticulture", "environment", "climate", "forestry", "conservation",
-        "agronomist", "ecologist", "farm", "natural resources", "soil", "animal", "crop"
-    ],
-    "Architecture & Construction": [
-        "architecture", "architect", "construction", "site supervisor", "planner",
-        "urban planning", "interior design", "landscape", "surveying", "quantity surveyor",
-        "draughtsman", "builder"
-    ],
-    "Social Sciences & Community": [
-        "social worker", "sociologist", "community", "ngo", "development officer",
-        "humanitarian", "psychologist", "counselor", "activist", "gender", "youth worker"
-    ],
-    "Hospitality & Tourism": [
-        "hospitality", "tourism", "hotel", "chef", "cook", "housekeeping", "travel",
-        "airline", "waiter", "bartender", "event planner", "front office", "resort"
-    ],
-    "Security & Protective Services": [
-        "security", "guard", "military", "police", "defense", "intelligence", "forensic",
-        "safety", "firefighter", "rescue"
-    ],
-    "Other": []
-}
-
-def classify_department(title: str) -> str:
-    title = title.lower()
-    best_match = ("Other", 0)
-    for department, keywords in department_keywords.items():
-        for kw in keywords:
-            score = fuzz.partial_ratio(kw, title)
-            if score > best_match[1]:
-                best_match = (department, score)
-    return best_match[0] if best_match[1] > 75 else "Other"
-
-# -------------------------------
-# 🏠 Location Classification (Improved)
-# -------------------------------
-def classify_location(text: str) -> str:
-    if not text:
-        return "Unclear"
-
-    text = text.lower()
-
-    if "remote" in text or "remotely" in text or "work from home" in text:
-        return "Remote"
-
-    if "hybrid" in text or "mixed model" in text or "both remote and onsite" in text:
-        return "Hybrid"
-
-    if any(word in text for word in ["onsite", "on-site", "office", "in-person", "physical location"]):
-        return "Onsite"
-
-    if any(word in text for word in ["part time", "part-time", "flexible hours"]):
-        return "Part time"
-
-    keywords = {
-        "Remote": ["virtual", "telecommute", "home-based", "telework"],
-        "Hybrid": ["hybrid model", "split office", "part remote"],
-        "Onsite": ["office environment", "at the office", "work at site"],
-        "Part time": ["part time", "flex schedule", "temporary"]
-    }
-
-    for category, terms in keywords.items():
-        for term in terms:
-            score = fuzz.partial_ratio(term, text)
-            if score >= 80:
-                return category
-
-    return "Unclear"
-
-# -------------------------------
-# 📜 Logging
-# -------------------------------
-def log(msg: str):
-    timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
-    print(f"{timestamp} {msg}")
-    with open("scraper_log.txt", "a", encoding="utf-8") as f:
-        f.write(f"{timestamp} {msg}\n")
+# ... (Previous code sections remain unchanged) ...
 
 # -------------------------------
 # 🕷 Scraper Function
@@ -157,11 +29,9 @@ def scrape_myjobmag(pages=5, headless=True, delay=1.5,
     options.add_argument("--no-sandbox")
     options.add_argument("--window-size=1920,1080")
 
-    chromedriver_path = str(Path(__file__).resolve().parent.parent / "chromedriver.exe")
-    if not os.path.exists(chromedriver_path):
-        raise FileNotFoundError(f"chromedriver.exe not found at: {chromedriver_path}")
-    service = Service(chromedriver_path)
-
+    # Use WebDriver Manager to automatically handle driver installation
+    service = Service(ChromeDriverManager().install())
+    
     driver = webdriver.Chrome(service=service, options=options)
     wait = WebDriverWait(driver, 20)
     all_jobs = []

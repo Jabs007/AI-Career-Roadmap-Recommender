@@ -1,5 +1,6 @@
-pandas
+pandas>=2.0.0
 selenium
+webdriver-manager
 thefuzz
 scikit-learn
 nltk
@@ -7,3 +8,4 @@ streamlit
 transformers
 torch
 plotly
+pytest
