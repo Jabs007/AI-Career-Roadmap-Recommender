@@ -1,0 +1,45 @@
+[
+    {
+        "student_id": "ST_001",
+        "mean_grade": "A",
+        "subjects": {
+            "Mathematics": "A",
+            "English": "A",
+            "Kiswahili": "A-",
+            "Biology": "A",
+            "Physics": "A",
+            "Chemistry": "A-",
+            "Geography": "B+",
+            "Business Studies": "A"
+        },
+        "notes": "Premium Student - Eligible for Medicine, Engineering, CS"
+    },
+    {
+        "student_id": "ST_002",
+        "mean_grade": "C-",
+        "subjects": {
+            "Mathematics": "D+",
+            "English": "C",
+            "Kiswahili": "C",
+            "Biology": "C-",
+            "Physics": "D",
+            "Chemistry": "D+",
+            "History": "C"
+        },
+        "notes": "Diploma/TVET Candidate - Ineligible for direct Degree"
+    },
+    {
+        "student_id": "ST_003",
+        "mean_grade": "B",
+        "subjects": {
+            "Mathematics": "C+",
+            "English": "B",
+            "Kiswahili": "B",
+            "Biology": "B-",
+            "Physics": "C+",
+            "Chemistry": "C+",
+            "Computer Studies": "A"
+        },
+        "notes": "Aspirational - Strong in CS, borderline for some Engineering"
+    }
+]
