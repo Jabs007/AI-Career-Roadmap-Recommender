@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Project specific
+chromedriver.exe
+chromedriver-win64/
+*.log
+*.csv
+*.json
+!Kuccps/*.json
+!Kuccps/*.csv
+!data/*.csv
+!data/*.json
+# Keep important data files if they are part of the source, but maybe ignore scraped data if it's large/generated?
+# User's scrape output likely shouldn't be versioned if it's large, but let's check size. 
+# scraped_jobs.csv is 325KB. Maybe okay.
+# import_log.txt

@@ -1,0 +1,9 @@
+pandas
+selenium
+thefuzz
+scikit-learn
+nltk
+streamlit
+transformers
+torch
+plotly

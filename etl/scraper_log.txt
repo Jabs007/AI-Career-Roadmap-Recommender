@@ -1,0 +1,21 @@
+[2025-12-18 20:36:37] Fetching page 1: https://www.myjobmag.co.ke/jobs
+[2025-12-18 20:39:03] Fetching page 2: https://www.myjobmag.co.ke/jobs/page/2
+[2025-12-18 20:41:42] Fetching page 3: https://www.myjobmag.co.ke/jobs/page/3
+[2025-12-18 20:43:28] Fetching page 4: https://www.myjobmag.co.ke/jobs/page/4
+[2025-12-18 20:45:12] Fetching page 5: https://www.myjobmag.co.ke/jobs/page/5
+[2025-12-18 20:48:28] Failed to extract job from: https://www.myjobmag.co.ke/job/regional-technical-senior-specialist-conflict-east-africa-chemonics-international-1
+[2025-12-18 21:12:34] Fetching page 1: https://www.myjobmag.co.ke/jobs
+[2025-12-18 21:14:32] Fetching page 2: https://www.myjobmag.co.ke/jobs/page/2
+[2025-12-18 21:16:33] Fetching page 3: https://www.myjobmag.co.ke/jobs/page/3
+[2025-12-18 21:19:43] Failed to extract job from: https://www.myjobmag.co.ke/job/german-english-patent-translator-chemistry-freelance-rws
+[2025-12-18 21:24:51] Failed to extract job from: https://www.myjobmag.co.ke/jobs/jobs-at-flexi-personnel-34
+[2025-12-18 21:29:53] Failed to extract job from: https://www.myjobmag.co.ke/jobs/vacancies-at-danchurchaid-dca-1
+[2025-12-18 21:33:38] Fetching page 4: https://www.myjobmag.co.ke/jobs/page/4
+[2025-12-18 21:35:24] Fetching page 5: https://www.myjobmag.co.ke/jobs/page/5
+[2025-12-18 21:37:20] Fetching page 6: https://www.myjobmag.co.ke/jobs/page/6
+[2025-12-18 21:40:16] Failed to extract job from: https://www.myjobmag.co.ke/jobs/vacancies-at-remote
+[2025-12-18 21:44:21] Fetching page 7: https://www.myjobmag.co.ke/jobs/page/7
+[2025-12-18 21:46:26] Fetching page 8: https://www.myjobmag.co.ke/jobs/page/8
+[2025-12-18 21:48:13] Fetching page 9: https://www.myjobmag.co.ke/jobs/page/9
+[2025-12-18 21:50:47] Fetching page 10: https://www.myjobmag.co.ke/jobs/page/10
+[2025-12-18 21:52:58] Scraped and saved 250 jobs.

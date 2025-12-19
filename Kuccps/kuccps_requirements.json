@@ -1,0 +1,153 @@
+{
+    "Medicine": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Biology": "B",
+            "Chemistry": "B",
+            "Mathematics_or_Physics": "C+",
+            "English_or_Kiswahili": "C+"
+        },
+        "note": "Highly competitive programme; actual cutoffs are usually much higher.",
+        "level": "Degree"
+    },
+    "Nursing (Degree)": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Biology": "C+",
+            "Chemistry": "C+",
+            "Mathematics_or_Physics": "C+",
+            "English_or_Kiswahili": "C+"
+        },
+        "level": "Degree"
+    },
+    "Nursing (Diploma)": {
+        "min_mean_grade": "C",
+        "required_subjects": {
+            "Biology": "C",
+            "English_or_Kiswahili": "C",
+            "Chemistry_or_Mathematics_or_Physics": "C-"
+        },
+        "level": "Diploma"
+    },
+    "Computer Science": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Mathematics": "C+",
+            "Physics_or_Computer_Studies": "C"
+        },
+        "level": "Degree"
+    },
+    "Software Engineering": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Mathematics": "C+",
+            "Physics_or_Computer_Studies": "C+"
+        },
+        "note": "More math-intensive than IT or Computer Science.",
+        "level": "Degree"
+    },
+    "Information Technology (Degree)": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Mathematics": "C",
+            "English_or_Kiswahili": "C"
+        },
+        "level": "Degree"
+    },
+    "Information Technology (Diploma)": {
+        "min_mean_grade": "C-",
+        "required_subjects": {
+            "Mathematics": "D+",
+            "English_or_Kiswahili": "D+"
+        },
+        "level": "Diploma"
+    },
+    "Engineering (Degree)": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Mathematics": "C+",
+            "Physics": "C+"
+        },
+        "note": "Specific engineering disciplines may require Chemistry.",
+        "level": "Degree"
+    },
+    "Engineering (Diploma)": {
+        "min_mean_grade": "C-",
+        "required_subjects": {
+            "Mathematics": "C-",
+            "Physics": "D+"
+        },
+        "level": "Diploma"
+    },
+    "Finance": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Mathematics": "C",
+            "English_or_Kiswahili": "C"
+        },
+        "level": "Degree"
+    },
+    "Accounting": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Mathematics": "C",
+            "English_or_Kiswahili": "C"
+        },
+        "level": "Degree"
+    },
+    "Law (Degree)": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "English_or_Kiswahili": "B"
+        },
+        "note": "Strong language performance is mandatory.",
+        "level": "Degree"
+    },
+    "Law (Diploma)": {
+        "min_mean_grade": "C",
+        "required_subjects": {
+            "English_or_Kiswahili": "C+"
+        },
+        "level": "Diploma"
+    },
+    "Education": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Teaching_Subject_1": "C+",
+            "Teaching_Subject_2": "C+"
+        },
+        "note": "Requirements depend on chosen teaching subjects.",
+        "level": "Degree"
+    },
+    "Arts & Humanities": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "English_or_Kiswahili": "C-"
+        },
+        "level": "Degree"
+    },
+    "Commerce (Degree)": {
+        "min_mean_grade": "C+",
+        "required_subjects": {
+            "Mathematics": "C",
+            "English_or_Kiswahili": "C"
+        },
+        "level": "Degree"
+    },
+    "Commerce (Diploma)": {
+        "min_mean_grade": "C-",
+        "required_subjects": {
+            "Mathematics": "D+",
+            "English_or_Kiswahili": "D+"
+        },
+        "level": "Diploma"
+    },
+    "Business Management (Diploma)": {
+        "min_mean_grade": "C-",
+        "required_subjects": {
+            "Mathematics": "D",
+            "English_or_Kiswahili": "D"
+        },
+        "level": "Diploma"
+    }
+}
