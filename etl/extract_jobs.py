@@ -13,7 +13,134 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from thefuzz import fuzz
 
-# ... (Previous code sections remain unchanged) ...
+# -------------------------------
+# 🪵 UTILITY- Log Function
+# -------------------------------
+def log(message):
+    """Simple logger to print messages with a timestamp."""
+    print(f"[{datetime.now():%H:%M:%S}] {message}")
+
+# -------------------------------
+# 🗺️ CLASSIFICATION LOGIC
+# -------------------------------
+department_keywords = {
+    "Information Technology": [
+        "developer", "software", "ict", "data", "ai", "machine learning", "cyber", "programmer",
+        "analyst", "information technology", "computer", "network", "support", "systems",
+        "cloud", "security", "database", "web", "frontend", "backend", "fullstack",
+        "coding", "programming", "software engineering", "it", "hardware", "tech",
+        "apps", "mobile", "internet", "coding", "algorithm", "devops", "code", "coder", "website",
+        "python", "javascript", "java", "c#", "rust", "go", "php", "ruby", "sql", "flutter", "react",
+        "node", "typescript", "swift", "kotlin", "android", "ios", "aws", "azure", "docker", "kubernetes"
+    ],
+    "Business": [
+        "business", "operations", "strategy", "manager", "consultant", "entrepreneur",
+        "logistics", "supply chain", "management", "administration", "leadership", "commerce", "startup"
+    ],
+    "Education": [
+        "teacher", "lecturer", "education", "instructor", "tutor", "training",
+        "curriculum", "school", "dean", "academic", "principal", "teaching", "pedagogy", "training"
+    ],
+    "Finance & Accounting": [
+        "accountant", "finance", "auditor", "economist", "investment", "bookkeeper",
+        "financial", "tax", "cpa", "controller", "budget", "accounting", "banking", "audit", "money"
+    ],
+    "Healthcare & Medical": [
+        "nurse", "doctor", "pharmacist", "medical", "clinical", "health", "surgeon",
+        "therapist", "dental", "radiologist", "physician", "lab technician", "veterinary",
+        "nutritionist", "psychiatrist", "medicine", "dentistry", "pharmacy", "patient",
+        "care", "healthcare", "therapy", "hospital", "surgery", "anatomy", "biology",
+        "diseases", "pathology", "pharmaceuticals", "public health", "physiology",
+        "nursing", "midwifery", "diagnostics", "treatment", "human health", "biologist", "science"
+    ],
+    "Engineering": [
+        "engineer", "mechanical", "civil", "electrical", "technician", "biomedical",
+        "mechatronic", "chemical", "project engineer", "structural",
+        "industrial", "automotive", "manufacturing", "telecommunication", "machinery",
+        "construction", "design", "robotics", "automation", "robot", "robots", "build", "building",
+        "electronics", "maintenance", "architecture", "system design", "engines"
+    ],
+    "Marketing & Sales": [
+        "marketing", "seo", "sales", "brand", "advertising", "digital", "content",
+        "promotion", "telemarketing", "social media", "copywriter", "account executive",
+        "market research", "public relations", "pr", "selling"
+    ],
+    "Administration & Support": [
+        "admin", "clerk", "secretary", "assistant", "receptionist", "office manager",
+        "front desk", "executive assistant", "records", "filing"
+    ],
+    "Human Resources": [
+        "human resources", "hr", "recruiter", "talent management", "personnel", "staffing",
+        "employee relations", "talent acquisition", "labor laws", "payroll", "onboarding", "hiring"
+    ],
+    "Law": [
+        "lawyer", "legal", "attorney", "advocate", "compliance", "legal officer", "paralegal",
+        "regulatory", "litigation", "contract", "corporate law", "law", "justice", "judiciary",
+        "courts", "arbitration"
+    ],
+    "Arts & Media": [
+        "artist", "musician", "painter", "graphic designer", "illustrator", "videographer",
+        "photographer", "media", "journalist", "writer", "editor", "communication",
+        "film", "animation", "content creator", "design", "creative", "theatre", "drawing"
+    ],
+    "Agriculture & Environmental": [
+        "agriculture", "horticulture", "environment", "climate", "forestry", "conservation",
+        "agronomist", "ecologist", "farm", "natural resources", "soil", "animal", "crop",
+        "farming", "livestock", "irrigation", "agribusiness", "vet"
+    ],
+    "Architecture & Construction": [
+        "architecture", "architect", "construction", "site supervisor", "planner",
+        "urban planning", "interior design", "landscape", "surveying", "quantity surveyor",
+        "draughtsman", "builder", "real estate development", "building"
+    ],
+    "Social Sciences & Community": [
+        "social worker", "sociologist", "community", "ngo", "development officer",
+        "humanitarian", "psychologist", "counselor", "activist", "gender", "youth worker",
+        "counseling", "anthropology"
+    ],
+    "Hospitality & Tourism": [
+        "hospitality", "tourism", "hotel", "chef", "cook", "housekeeping", "travel",
+        "airline", "waiter", "bartender", "event planner", "front office", "resort", "catering"
+    ],
+    "Security & Protective Services": [
+        "security", "guard", "military", "police", "defense", "intelligence", "forensic",
+        "safety", "firefighter", "rescue", "policing", "crimonology"
+    ],
+    "Data Science & Analytics": [
+        "data analyst", "data scientist", "big data", "statistics", "mathematics",
+        "tableau", "power bi", "sql", "excel", "visualization", "predictive modeling",
+        "machine learning", "data mining", "math", "analysis"
+    ],
+    "Project Management": [
+        "project manager", "pmp", "agile", "scrum", "planning", "delivery", "stakeholder",
+        "budgeting", "coordination", "implementation"
+    ],
+    "Renewable Energy & Environment": [
+        "solar", "wind", "renewable", "energy", "sustainability", "environmental",
+        "climate change", "green energy", "conservation"
+    ],
+    "Real Estate & Property": [
+        "real estate", "property", "valuation", "realtor", "broker", "estate agent",
+        "leasing", "tenancy", "land", "property management"
+    ],
+    "Aviation & Logistics": [
+        "pilot", "aviation", "flight", "logistics", "warehouse", "transport",
+        "airline", "cargo", "fleet", "clearing", "forwarding"
+    ],
+    "Other": []
+}
+
+def classify_department(job_title, description="", skills=""):
+    text = f"{job_title} {description} {skills}".lower()
+    for dept, keywords in department_keywords.items():
+        for kw in keywords:
+            if kw.lower() in text:
+                return dept
+    return "Other"
+
+def classify_location(location_text):
+    # TODO: Implement robust location classification (Remote, On-site, Hybrid)
+    return "Unclear"
 
 # -------------------------------
 # 🕷 Scraper Function
@@ -77,16 +204,17 @@ def scrape_myjobmag(pages=5, headless=True, delay=1.5,
 
                     location = extract_field("Location")
 
+                    skills = extract_field("Skills")
                     job_data = {
                         "Job Title": job_title,
                         "Company": company_name,
                         "Description": description,
                         "Minimum Qualification": extract_field("Qualification"),
-                        "Skills Required": extract_field("Skills"),
+                        "Skills Required": skills,
                         "Location": location,
                         "Work Type": classify_location(location),
                         "Years of Experience": extract_field("Experience"),
-                        "Department": classify_department(job_title)
+                        "Department": classify_department(job_title, description, skills)
                     }
 
                 except Exception as e:
@@ -100,7 +228,7 @@ def scrape_myjobmag(pages=5, headless=True, delay=1.5,
                         "Location": "",
                         "Work Type": "Unclear",
                         "Years of Experience": "",
-                        "Department": classify_department(job_title)
+                        "Department": classify_department(job_title, "", "")
                     }
 
                 try:

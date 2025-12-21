@@ -9,3 +9,4 @@ transformers
 torch
 plotly
 pytest
+fpdf2

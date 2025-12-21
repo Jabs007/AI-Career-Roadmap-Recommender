@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def compute_demand_metrics(jobs_csv_path="data/myjobmag_jobs.csv", output_path="data/job_demand_metrics.csv"):
+def compute_demand_metrics(jobs_csv_path="data/jobs.csv", output_path="data/job_demand_metrics.csv"):
     """
     Compute job demand metrics from scraped jobs data.
 

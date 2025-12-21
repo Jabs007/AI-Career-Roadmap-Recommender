@@ -1,6 +1,7 @@
 # Career Recommender Engine - v2.1
 import pandas as pd
 import json
+import configparser
 from .interest_classifier import InterestClassifier
 
 class CareerRecommender:
@@ -8,28 +9,32 @@ class CareerRecommender:
         "A": 12, "A-": 11, "B+": 10, "B": 9, "B-": 8, "C+": 7, "C": 6, "C-": 5, "D+": 4, "D": 3, "D-": 2, "E": 1, "N/A": 0
     }
 
-    def __init__(self, demand_csv="data/job_demand_metrics.csv", skill_map_json="data/career_skill_map.json", jobs_csv="data/myjobmag_jobs.csv", kuccps_csv="Kuccps/kuccps_courses.csv", requirements_json="Kuccps/kuccps_requirements.json"):
+    def __init__(self, config_file="config.ini"):
+        config = configparser.ConfigParser()
+        config.read(config_file)
+        paths = config['paths']
+
         self.classifier = InterestClassifier()
 
         # Load demand metrics
-        self.demand_df = pd.read_csv(demand_csv)
+        self.demand_df = pd.read_csv(paths['demand_csv'])
         self.demand_df.set_index('Department', inplace=True)
         self.max_demand = self.demand_df['job_count'].max()
 
         # Load skill map
-        with open(skill_map_json, 'r') as f:
+        with open(paths['skill_map_json'], 'r') as f:
             self.skill_map = json.load(f)
 
         # Load scraped jobs
         try:
-            self.jobs_df = pd.read_csv(jobs_csv)
+            self.jobs_df = pd.read_csv(paths['jobs_csv'])
         except Exception as e:
             print(f"Warning: Could not load jobs CSV: {e}")
             self.jobs_df = pd.DataFrame(columns=['Job Title', 'Company', 'Department'])
 
         # Load KUCCPS University Mapping
         try:
-            kuccps_df = pd.read_csv(kuccps_csv)
+            kuccps_df = pd.read_csv(paths['kuccps_csv'])
             # Remove duplicates and group
             self.university_map = kuccps_df.groupby('Programme_Name')['Institution_Name'].apply(lambda x: list(set(x))).to_dict()
         except Exception as e:
@@ -38,7 +43,7 @@ class CareerRecommender:
 
         # Load KUCCPS Academic Requirements
         try:
-            with open(requirements_json, 'r') as f:
+            with open(paths['requirements_json'], 'r') as f:
                 self.kuccps_requirements = json.load(f)
         except Exception as e:
             print(f"Warning: Could not load KUCCPS requirements: {e}")
@@ -185,14 +190,23 @@ class CareerRecommender:
         is_mixed_interest = (top_scores[0] - top_scores[1]) < 0.05 if len(top_scores) > 1 else False
         is_low_signal = top_scores[0] < 0.15
         
-        # Calculate confidence score
+        # Calculate confidence score (Interest + Data Density)
         avg_interest = sum(top_scores) / len(top_scores) if top_scores else 0
+        
+        # Check data density for the top match
+        top_dept_name = [k for k,v in interest_scores.items() if v == top_scores[0]][0] if top_scores else "Unknown"
+        demand_key = demand_mapping.get(top_dept_name, top_dept_name)
+        has_data =  demand_key in self.demand_df.index and self.demand_df.loc[demand_key, 'job_count'] > 5
+
         if is_low_signal:
             confidence = "Low"
-            conf_reason = "Input contains sparse career-specific keywords."
-        elif avg_interest > 0.4:
+            conf_reason = "Input was vague/short. We prioritized broad market trends."
+        elif avg_interest > 0.4 and has_data:
             confidence = "High"
-            conf_reason = "Strong alignment between input and career taxonomies."
+            conf_reason = "Strong alignment with both your interests AND verified market data."
+        elif avg_interest > 0.4:
+            confidence = "Medium"
+            conf_reason = "High interest match, but limited local job data available to verify."
         else:
             confidence = "Medium"
             conf_reason = "Moderate keyword signal detected."
@@ -205,31 +219,10 @@ class CareerRecommender:
         # Market-only ranking (pre-computed from self.demand_df)
         market_baseline = self.demand_df.sort_values('job_count', ascending=False).head(5).index.tolist()
 
-        for dept in interest_scores:
-            interest_score = interest_scores[dept]
-            
-            # INTEREST FILTERING: 
-            # If low signal, we lower the bar significantly (0.02) to ensure some results
-            threshold = 0.02 if is_low_signal else 0.08
-            if interest_score < threshold:
-                continue
+        # Calculate scores
+        scores = self._calculate_scores(interest_scores, is_low_signal, alpha, beta, demand_mapping)
 
-            # Resolve demand key
-            demand_key = demand_mapping.get(dept, dept)
-            job_count = int(self.demand_df.loc[demand_key, 'job_count']) if demand_key in self.demand_df.index else 0
-            demand_score = job_count / self.max_demand if self.max_demand > 0 else 0
-            
-            # FINAL SCORE Calculation
-            effective_alpha = 0.3 if is_low_signal else alpha
-            effective_beta = 0.7 if is_low_signal else beta
-            
-            final_score = (effective_alpha * interest_score) + (effective_beta * demand_score)
-            
-            # XAI: Contribution Calculation
-            # This shows exactly how many points came from which side
-            interest_contribution = effective_alpha * interest_score
-            market_contribution = effective_beta * demand_score
-
+        for dept, score_data in scores.items():
             # DATA RETRIEVAL (Skills & Programs)
             lookup_dept = dept_mapping.get(dept, dept)
             if lookup_dept not in self.skill_map and dept == "Information Technology":
@@ -245,9 +238,86 @@ class CareerRecommender:
                     "Business": ["Strategic Management", "Financial Accounting", "Marketing", "Operations", "Leadership"],
                     "Law": ["Legal Research", "Jurisprudence", "Litigation", "Civil Law", "Drafting"],
                     "Engineering": ["Structural Design", "Technical Problem Solving", "CAD", "Project Engineering"],
-                    "Environmental Studies": ["Ecology", "Environmental Impact Assessment", "Conservation", "GIS"]
+                    "Environmental Studies": ["Ecology", "Environmental Impact Assessment", "Conservation", "GIS"],
+                    "Agriculture": ["Agribusiness", "Crop Management", "Soil Science", "Sustainable Farming"],
+                    "Education": ["Curriculum Design", "Pedagogy", "Student Mentorship", "EdTech Tools"],
+                    "Media & Communications": ["Content Strategy", "Public Relations", "Digital Media", "Storytelling"]
                 }
                 skills = fallback_skills.get(lookup_dept, ["Analytical Thinking", "Critical Problem Solving", "Effective Communication"])
+
+            # Market context
+            # Extract score data for clarity
+            interest_score = score_data['interest_score']
+            demand_score = score_data['demand_score']
+            job_count = score_data['job_count']
+            if job_count > 30:
+                market_advice = f"🔥 **High Demand**: We found over {job_count} active job listings in this field recently."
+                market_outlook = "Excellent. The industry is rapidly expanding with high volumes of entry-level and senior roles."
+            elif job_count > 0:
+                market_advice = f"📈 **Steady Growth**: There are {job_count} current openings matching this field."
+                market_outlook = "Stable. There is a consistent need for professionals, providing reliable career progression."
+            else:
+                market_advice = "🔍 **Niche Field**: Opportunities may be specialized or emerging."
+                market_outlook = "Competitive/Specialized. Roles may require higher specialization or are emerging in the local market."
+
+            # PHASE 4: ELIGIBILITY PROCESSING (Integrated for Tone-Aware Rationale)
+            dept_status = "UNKNOWN"
+            eligibility_map = {}
+            if kcse_results:
+                has_degree_eligible = False
+                has_aspirational = False
+                diploma_options = []
+
+                for prog in programs:
+                    status, reason = self.check_eligibility(prog, kcse_results)
+                    eligibility_map[prog] = {"status": status, "reason": reason}
+                    if status == "ELIGIBLE": has_degree_eligible = True
+                    if status == "ASPIRATIONAL": has_aspirational = True
+                
+                if not has_degree_eligible:
+                    dept_kw = dept.lower().split()
+                    for req_name, req_data in self.kuccps_requirements.items():
+                        if req_data.get('level') == "Diploma" and any(kw in req_name.lower() for kw in dept_kw):
+                            d_status, d_reason = self.check_eligibility(req_name, kcse_results)
+                            if d_status == "ELIGIBLE":
+                                eligibility_map[req_name] = {"status": "ELIGIBLE", "reason": f"Qualify for Diploma Pathway: {d_reason}"}
+                                diploma_options.append(req_name)
+
+                if has_degree_eligible: dept_status = "ELIGIBLE"
+                elif diploma_options: dept_status = "ELIGIBLE (DIPLOMA)"
+                elif has_aspirational: dept_status = "ASPIRATIONAL"
+                else: dept_status = "NOT ELIGIBLE"
+
+            # PHASE 5: ELIGIBILITY-AWARE RATIONALE
+            primary_skill = skills[0] if skills else "specialized techniques"
+            matched_keywords = [kw for kw in department_keywords.get(dept, []) if kw in user_tokens]
+            
+            comprehensive_rationale = self._generate_rationale(dept_status, dept, score_data['interest_score'], score_data['job_count'], primary_skill, matched_keywords, skills)
+
+            # WHY BEST (Dynamic Strategy Context)
+            # WHY BEST (Dynamic Strategy Context)
+            if alpha > 0.8:
+                why_best = f"**Passion-First Priority**: Ranked #1 because it perfectly aligns with your stated interests, ignoring market noise."
+            elif beta > 0.6:
+                why_best = f"**Market-First Priority**: Prioritized for its massive job security ({job_count} open roles), despite standard interest levels."
+            elif is_mixed_interest and interest_score in top_scores:
+                why_best = f"**Interdisciplinary Pivot**: Bridging your diverse interests, {dept} serves as a perfect 'Hybrid Career' anchor."
+            elif interest_score > 0.6 and demand_score > 0.6:
+                 why_best = f"**The Unicorn Match**: Rare high scores in BOTH passion ({interest_score:.0%}) and market demand ({demand_score:.0%})."
+            elif interest_score > demand_score + 0.3:
+                why_best = f"**Personal Strength**: Your passion for this field significantly outweighs current market trends."
+            elif demand_score > interest_score + 0.3:
+                why_best = f"**Strategic Opportunity**: A 'Hidden Gem' field where your skills are needed more than you realized."
+            else:
+                why_best = f"**Balanced Choice**: An ideal trade-off between your happiness and your paycheck."
+
+            # Extract score data for clarity
+            interest_score = score_data['interest_score']
+            demand_score = score_data['demand_score']
+            final_score = score_data['final_score']
+            job_count = score_data['job_count']
+            interest_contribution = score_data['interest_contribution']
+            market_contribution = score_data['market_contribution']
 
             # Market context
             if job_count > 30:
@@ -292,53 +362,7 @@ class CareerRecommender:
             primary_skill = skills[0] if skills else "specialized techniques"
             matched_keywords = [kw for kw in department_keywords.get(dept, []) if kw in user_tokens]
             
-            if dept_status == "NOT ELIGIBLE":
-                academic_layer = (
-                    f"**1. Academic Reality Check**: Although your interests align {interest_score:.0%} with {dept} concepts, your current KCSE profile does not yet meet the Degree entry threshold. "
-                    f"Pursuing this path directly through a Degree is currently blocked, but your passion suggests you should consider TVET foundations first."
-                )
-                market_layer = (
-                    f"**2. Strategic Pivot**: With {job_count} jobs in this sector, the demand is real. However, to access these roles, you'll need to focus on skill-based certifications "
-                    f"rather than traditional academic routes until you qualify for advanced bridging."
-                )
-                trajectory_layer = (
-                    f"**3. Alternative Entry**: Don't lose heart—many sector leaders started with technical certificates. Focus on mastering {primary_skill} via short courses to enter the market while planning your academic progression."
-                )
-            elif dept_status == "ELIGIBLE (DIPLOMA)":
-                academic_layer = (
-                    f"**1. Practical Path Forward**: You qualify for a **Diploma** in {dept}! This is a massive advantage as it allows you to gain industry skills faster than a degree student. "
-                    f"You have the semantic foundation to excel in {primary_skill} at a technical level."
-                )
-                market_layer = (
-                    f"**2. Fast-Track to Employment**: The market for Diploma holders in {dept} is strong. Companies value the 'hands-on' expertise you will gain. "
-                    f"With {job_count} roles active, your specialized technical training will make you a prime candidate for operational roles."
-                )
-                trajectory_layer = (
-                    f"**3. The Ladder Strategy**: Use your Diploma as a launchpad. After two years of work, most Kenyan universities will allow you to enroll in a Degree via 'Credit Transfer', often shortening the degree path significantly."
-                )
-            elif dept_status == "ASPIRATIONAL":
-                academic_layer = (
-                    f"**1. Narrow Academic Gap**: You are **very close** to qualifying for a Degree in {dept}. Your interest match is excellent, and you likely only need a single grade "
-                    f"improvement or a short pre-university bridge to unlock this path."
-                )
-                market_layer = (
-                    f"**2. High Stakes Match**: Because your interest in {dept} is so strong, it is worth the extra effort to bridge the academic gap. The {job_count} "
-                    f"vacancies represent a future where your passion meets significant economic opportunity."
-                )
-                trajectory_layer = (
-                    f"**3. Persistence Strategy**: Consider a 'Bridging Course' in your weakest cluster subject. This small investment now could unlock a {dept} career that aligns with your highest cognitive strengths."
-                )
-            else: # ELIGIBLE or UNKNOWN
-                if matched_keywords:
-                    m_str = ", ".join(matched_keywords[:3])
-                    academic_layer = f"**1. Direct Academic Alignment**: Your deep interest in **{m_str}** makes you a perfect fit for {dept} modules like {primary_skill}."
-                else:
-                    academic_layer = f"**1. Holistic Fit**: Your conceptual approach aligns with the analytical framework of {dept}, particularly for mastering **{primary_skill}**."
-                
-                market_layer = f"**2. Market Symbiosis**: We've found **{job_count} active vacancies** in {dept}. Your skills in {skills[1] if len(skills)>1 else 'industry tools'} will be in high demand."
-                trajectory_layer = f"**3. Strategic Growth**: This path offers a clear bridge to leadership, leveraging your capacity for {skills[2] if len(skills)>2 else 'strategic thinking'}."
-
-            comprehensive_rationale = f"{academic_layer}\n\n{market_layer}\n\n{trajectory_layer}"
+            comprehensive_rationale = self._generate_rationale(dept_status, dept, interest_score, job_count, primary_skill, matched_keywords, skills)
 
             # WHY BEST (Dynamic Strategy Context)
             if alpha > 0.8:
@@ -468,3 +492,94 @@ class CareerRecommender:
             list: List of programs
         """
         return self.skill_map.get(department, {}).get("programs", [])
+
+    def _calculate_scores(self, interest_scores, is_low_signal, alpha, beta, demand_mapping):
+        """
+        Calculates the interest, demand, and final scores for each department.
+        """
+        scores = {}
+        for dept, interest_score in interest_scores.items():
+            threshold = 0.02 if is_low_signal else 0.08
+            if interest_score < threshold:
+                continue
+
+            demand_key = demand_mapping.get(dept, dept)
+            job_count = int(self.demand_df.loc[demand_key, 'job_count']) if demand_key in self.demand_df.index else 0
+            demand_score = job_count / self.max_demand if self.max_demand > 0 else 0
+
+            effective_alpha = 0.3 if is_low_signal else alpha
+            effective_beta = 0.7 if is_low_signal else beta
+
+            final_score = (effective_alpha * interest_score) + (effective_beta * demand_score)
+
+            scores[dept] = {
+                'interest_score': interest_score,
+                'demand_score': demand_score,
+                'final_score': final_score,
+                'job_count': job_count,
+                'interest_contribution': effective_alpha * interest_score,
+                'market_contribution': effective_beta * demand_score
+            }
+        return scores
+
+    def _generate_summary(self, dept, dept_status, final_score, comprehensive_rationale, why_best_str, top_jobs_str, eligible_courses_str):
+        """
+        Generates a summary for a recommended department.
+        """
+        return {
+            "department": dept,
+            "status": dept_status,
+            "score": final_score,
+            "rationale": comprehensive_rationale,
+            "why_best": why_best_str,
+            "top_jobs": top_jobs_str,
+            "courses": eligible_courses_str
+        }
+
+    def _generate_rationale(self, dept_status, dept, interest_score, job_count, primary_skill, matched_keywords, skills):
+        """
+        Generates the eligibility-aware rationale for a recommendation.
+        """
+        if dept_status == "NOT ELIGIBLE":
+            academic_layer = (
+                f"**1. Academic Reality Check**: Your KCSE results indicate that direct entry into a Degree program for {dept} isn't currently possible. "
+                f"However, your passion for this field is a strong signal that you shouldn't give up. This is a redirection, not a dead end."
+            )
+            market_layer = (
+                f"**2. Strategic Pivot to TVET**: The Kenyan market has a high demand for practical skills. With {job_count} jobs available, the quickest way to enter this field is through a TVET Diploma. "
+                f"This path is often faster and more hands-on than a traditional degree."
+            )
+            trajectory_layer = (
+                f"**3. The Comeback Plan**: Enroll in a relevant Diploma course. Excel in it. After graduating, you can leverage the 'Diploma-to-Degree' bridge programs offered by many universities to get your degree, often with credit transfers that save you time and money."
+            )
+        elif dept_status == "ELIGIBLE (DIPLOMA)":
+            academic_layer = (
+                f"**1. Your Strategic Advantage**: You've qualified for a Diploma in {dept}! This is a powerful position to be in. You'll gain practical, job-ready skills from day one, making you highly attractive to employers."
+            )
+            market_layer = (
+                f"**2. Fast-Track to Your First Job**: Diploma graduates are in high demand. With {job_count} roles currently open, your hands-on training will give you a competitive edge over degree holders who may lack practical experience."
+            )
+            trajectory_layer = (
+                f"**3. The 'Earn While You Learn' Strategy**: Start your career after your diploma. Once you have a few years of experience, you can pursue a degree part-time or through executive programs. You'll have the powerful combination of a degree and solid work experience."
+            )
+        elif dept_status == "ASPIRATIONAL":
+            academic_layer = (
+                f"**1. You're Almost There**: You are incredibly close to qualifying for a Degree in {dept}. Your interest match is strong, and you likely only need to improve a single grade or take a bridging course to meet the requirements."
+            )
+            market_layer = (
+                f"**2. A Goal Worth Fighting For**: The high number of vacancies ({job_count}) shows that this is a field with significant opportunity. Your strong interest means you're more likely to succeed if you put in the extra effort to qualify."
+            )
+            trajectory_layer = (
+                f"**3. Your Action Plan**: Identify the specific subject that's holding you back and consider a bridging course. Alternatively, you can enroll in a Diploma program and then bridge to a Degree. Don't let a small gap stop you from pursuing your passion."
+            )
+        else:  # ELIGIBLE or UNKNOWN
+            if matched_keywords:
+                m_str = ", ".join(matched_keywords[:3])
+                academic_layer = f"**1. Excellent Academic & Interest Alignment**: Your strong interest in **{m_str}** and your academic record make you a perfect candidate for a Degree in {dept}."
+            else:
+                academic_layer = f"**1. Strong Holistic Fit**: Your profile shows a strong alignment with the analytical and conceptual demands of {dept}, particularly in areas like **{primary_skill}**."
+
+            market_layer = f"**2. High Market Demand**: With **{job_count} active job openings**, {dept} is a field with strong employment prospects. Your skills in {skills[1] if len(skills) > 1 else 'industry tools'} will be particularly valuable."
+            trajectory_layer = f"**3. Clear Path to Career Growth**: This degree will provide you with a direct path to leadership roles and specialized opportunities in the field. Your aptitude for {skills[2] if len(skills) > 2 else 'strategic thinking'} will be a key asset."
+
+        return f"{academic_layer}\n\n{market_layer}\n\n{trajectory_layer}"

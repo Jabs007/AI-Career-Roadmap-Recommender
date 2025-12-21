@@ -1,153 +1,6382 @@
 {
-    "Medicine": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Biology": "B",
-            "Chemistry": "B",
-            "Mathematics_or_Physics": "C+",
-            "English_or_Kiswahili": "C+"
-        },
-        "note": "Highly competitive programme; actual cutoffs are usually much higher.",
-        "level": "Degree"
+  "BACHELOR OF ARTS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PSYCHOLOGY, SOCIOLOGY & POLITICAL SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARCHITECTURAL STUDIES/BACHELOR OF ARCHITECTURE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
     },
-    "Nursing (Degree)": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Biology": "C+",
-            "Chemistry": "C+",
-            "Mathematics_or_Physics": "C+",
-            "English_or_Kiswahili": "C+"
-        },
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF ARCHITECTURE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
     },
-    "Nursing (Diploma)": {
-        "min_mean_grade": "C",
-        "required_subjects": {
-            "Biology": "C",
-            "English_or_Kiswahili": "C",
-            "Chemistry_or_Mathematics_or_Physics": "C-"
-        },
-        "level": "Diploma"
+    "level": "Degree"
+  },
+  "BACHELOR OF QUANTITY SURVEYING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
     },
-    "Computer Science": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Mathematics": "C+",
-            "Physics_or_Computer_Studies": "C"
-        },
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (DESIGN)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
     },
-    "Software Engineering": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Mathematics": "C+",
-            "Physics_or_Computer_Studies": "C+"
-        },
-        "note": "More math-intensive than IT or Computer Science.",
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (ANTHROPOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ANTHROPOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ACTUARIAL SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Information Technology (Degree)": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Mathematics": "C",
-            "English_or_Kiswahili": "C"
-        },
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ACTUARIAL SCIENCE WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Information Technology (Diploma)": {
-        "min_mean_grade": "C-",
-        "required_subjects": {
-            "Mathematics": "D+",
-            "English_or_Kiswahili": "D+"
-        },
-        "level": "Diploma"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ACTUARIAL SCIENCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Engineering (Degree)": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Mathematics": "C+",
-            "Physics": "C+"
-        },
-        "note": "Specific engineering disciplines may require Chemistry.",
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ACTUARIAL SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Engineering (Diploma)": {
-        "min_mean_grade": "C-",
-        "required_subjects": {
-            "Mathematics": "C-",
-            "Physics": "D+"
-        },
-        "level": "Diploma"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ACTUARIAL SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Finance": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Mathematics": "C",
-            "English_or_Kiswahili": "C"
-        },
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INDUSTRIAL CHEMISTRY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
     },
-    "Accounting": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Mathematics": "C",
-            "English_or_Kiswahili": "C"
-        },
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INDUSTRIAL CHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
     },
-    "Law (Degree)": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "English_or_Kiswahili": "B"
-        },
-        "note": "Strong language performance is mandatory.",
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN INDUSTRIAL CHEMISTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
     },
-    "Law (Diploma)": {
-        "min_mean_grade": "C",
-        "required_subjects": {
-            "English_or_Kiswahili": "C+"
-        },
-        "level": "Diploma"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICAL SCIENCES, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Education": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Teaching_Subject_1": "C+",
-            "Teaching_Subject_2": "C+"
-        },
-        "note": "Requirements depend on chosen teaching subjects.",
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Arts & Humanities": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "English_or_Kiswahili": "C-"
-        },
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
     },
-    "Commerce (Degree)": {
-        "min_mean_grade": "C+",
-        "required_subjects": {
-            "Mathematics": "C",
-            "English_or_Kiswahili": "C"
-        },
-        "level": "Degree"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (METEOROLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
     },
-    "Commerce (Diploma)": {
-        "min_mean_grade": "C-",
-        "required_subjects": {
-            "Mathematics": "D+",
-            "English_or_Kiswahili": "D+"
-        },
-        "level": "Diploma"
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
     },
-    "Business Management (Diploma)": {
-        "min_mean_grade": "C-",
-        "required_subjects": {
-            "Mathematics": "D",
-            "English_or_Kiswahili": "D"
-        },
-        "level": "Diploma"
-    }
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOLOGY (BOTANY OR ZOOLOGY OPTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOLOGICAL SCIENCES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOCHEMISTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOCHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOCHEMISTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOCHEMISTRY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN GEOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANALYTICAL CHEMISTRY WITH MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANALYTICAL CHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ANALYTICAL CHEMISTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ANALYTICAL CHEMISTRY WITH COMPUTING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANALYTICAL CHEMISTRY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMPUTER SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMPUTER SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (CIVIL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CIVIL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CIVIL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ELECTRICAL & ELECTRONICS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ELECTRICAL AND ELECTRONIC ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ELECTRICAL & ELECTRONIC ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ELECTRICAL AND ELECTRONIC ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ELECTRICAL AND ELECTRONICS ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ELECTRICAL AND ELECTRONICS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (MECHANICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MECHANICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (GEOSPATIAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOSPATIAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (B.SC)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BASIC SCIENCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BSC.)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BSC (SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PHYSICS, BIOLOGY,CHEMISTRY,MATHEMATICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (AGRICULTURAL & BIO-SYSTEMS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL & BIO-SYSTEMS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL AND BIOSYSTEMS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOSYSTEMS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRICULTURE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MICROBIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD SCIENCE & TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C",
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD SCIENCE AND TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C",
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FOOD SCIENCE AND TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C",
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FOOD TECHNOLOGY & QUALITY ASSURANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C",
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (FOOD SCIENCE AND TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C",
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MICROPROCESSOR TECHNOLOGY AND INSTRUMENTATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ASTRONOMY AND ASTROPHYSICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF DENTAL SURGERY": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "B",
+      "Chemistry": "B"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF PHARMACY": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF PHARMACY, WITH IT": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF VETERINARY MEDICINE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF VETERINARY MEDICINE AND SURGERY": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MEDICINE & BACHELOR OF SURGERY": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "B",
+      "Chemistry": "B"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MEDICINE & BACHELOR OF SURGERY (M.B.CH.B.)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "B",
+      "Chemistry": "B"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MEDICINE AND BACHELOR OF SURGERY": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "B",
+      "Chemistry": "B"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBCHB)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "B",
+      "Chemistry": "B"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (WITH IT)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "B",
+      "Chemistry": "B"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (NURSING, WITH IT)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (NURSING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN NURSING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN NURSING SCIENCE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (NURSING AND PUBLIC HEALTH)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF COMMERCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF COMMERCE (B.COM)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LAWS (LL.B.)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LAWS (LLB)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LAWS (LL.B.), WITH IT": {
+    "min_mean_grade": "B-",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION ARTS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (MAJOR ACCOUNTING AND BUSINESS ADMINISTRATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (CRIMINOLOGY & SECURITY STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (CRIMINOLOGY AND PENOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (CRIMINOLOGY AND SECURITY STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (CRIMINOLOGY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN CRIMINOLOGY, CRIMINAL JUSTICE AND PUBLIC SAFETY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF CRIMINOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CRIMINOLOGY AND SECURITY STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN CRIMINAL JUSTICE AND SECURITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (CRIMINOLOGY AND CRIMINAL JUSTICE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CRIMINOLOGY AND SECURITY MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN CRIMINOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SCIENCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SCIENCE WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MARINE ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WOOD SCIENCE AND INDUSTRIAL PROCESSES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WILDLIFE ENTERPRISE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WILDLIFE ENTERPRISES & MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WILDLIFE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WILDLIFE MANAGEMENT AND CONSERVATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (SOCIAL WORK)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SOCIAL WORK": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (RECORDS MANAGEMENT AND INFORMATION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PUBLIC ADMINISTRATION AND LEADERSHIP)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATION SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATION SCIENCES AND KNOWLEDGE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATION SCIENCES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN INFORMATION SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN INFORMATION SCIENCES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION IN MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MARKETING MANAGEMENT, WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SECRETARIAL MANAGEMENT AND ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR IN BUSINESS ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION (WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR IN BUSINESS ADMINISTRATION IN MARKETING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS AND OFFICE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION IN OFFICE ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SPECIAL NEEDS EDUCATION, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SPECIAL NEEDS EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN SPECIAL EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN SPECIAL NEEDS EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)WITH SPECIAL NEEDS EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (TOURISM MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN TOURISM MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TOURISM MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (TOURISM MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF INFORMATION COMMUNICATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATION AND COMMUNICATION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN INFORMATION & COMMUNICATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATION AND COMMUNICATION TECHNOLOGY MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PUBLIC ADMINISTRATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF MUSIC": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MUSIC THEORY AND COMPOSITION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (MUSIC, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (MUSIC)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)MUSIC": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (MUSIC, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (STATISTICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN STATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE STATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED STATISTICS WITH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED STATISTICS WITH COMPUTING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED STATISTICS WITH PROGRAMMING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED STATISTICS WITH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (STATISTICS & PROGRAMMING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED STATISTICS, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED STATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED STATISTICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PLANNING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (FRENCH, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "French": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)GERMAN": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "German": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (COMMUNITY DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS COMMUNITY DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN COMMUNITY DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOMEDICAL SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGROFORESTRY & RURAL DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF CONSTRUCTION MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF BROADCAST JOURNALISM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (DRAMA AND THEATRE STUDIES, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (THEATER ARTS & FILM TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS PERFORMING ARTS AND FILM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (EARLY CHILDHOOD DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN EARLY CHILDHOOD EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF JOURNALISM & MASS COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF JOURNALISM AND MASS COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN JOURNALISM AND MASS COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF COMMUNICATION & JOURNALISM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNICATION & JOURNALISM)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNICATION AND JOURNALISM)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF JOURNALISM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MANAGEMENT OF AGRO-ECOSYSTEM AND ENVIRONMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HORTICULTURE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HORTICULTURE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE HORTICULTURE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL CONSERVATION AND NATURAL RESOURCES MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRI BUSINESS MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRIBUSINESS MANAGEMENT & TRADE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRIBUSINESS MANAGEMENT, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRIBUSINESS MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE AGRIBUSINESS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRIBUSINESS MANGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL HEALTH)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL HEALTH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF HUMAN RESOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF HUMAN RESOURCES MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HUMAN RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HUMAN REOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HUMAN RESOURCE MANAGEMENT, WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HUMAN RESOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD NUTRITION & DIETETICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD NUTRITION AND DIETETICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD, NUTRITION & DIETETICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (NUTRITION AND DIETETICS, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FOOD NUTRITION AND DIETETICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FOOD, NUTRITION AND DIETETICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD SCIENCE & NUTRITION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD SCIENCE AND NUTRITION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOMEDICAL SCIENCE AND": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOMEDICAL SCIENCE & TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOMEDICAL SCIENCES &": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOMEDICAL SCIENCES & TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (SCIENCE LABORATORY TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL LABORATORY SCIENCE & TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL LABORATORY SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL LABORATORY SCIENCES, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL LABORATORY SCIENCES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MEDICAL LABORATORY SCIENCES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (OCCUPATIONAL HEALTH & SAFETY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (TELECOMMUNICATION & INFORM.": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (TELECOMMUNICATION AND INFORMATION ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (ECONOMICS & SOCIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (ECONOMICS AND SOCIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ECONOMICS & STATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ECONOMICS AND STATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ECONOMICS & STATISTICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ECONOMICS AND STATISTICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED STATISTICS AND ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (WITH EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN NUTRITION AND DIETETICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FOODS, NUTRITION AND DIETETICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMMUNITY NUTRITION AND HEALTH DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS AND INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMPUTER TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMPUTER SCIENCE & TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (EARTH SCIENCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MANUFACTURING ENGINEERING & TECHNOLOGY)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MECHANICAL AND MANUFACTURING ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL STUDIES (SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL SCIENCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL SCIENCES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL STUDIES (COMMUNITY DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL SCIENCE AND TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL ECONOMICS AND RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL ECONOMICS & RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE ECONOMICS & RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL ECONOMICS, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL ECONOMICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRICULTURAL ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF AGRICULTURAL ECONOMICS AND MARKETING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPAREL & FASHION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CLOTHING TEXTILE & INTERIOR DESIGN)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FASHION DESIGN & MARKETING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FASHION DESIGN AND TEXTILE TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FASHION DESIGN AND MARKETING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN TEXTILE TECHNOLOGY & APPLIED FASHION DESIGN": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (TEXTILE, FASHION DESIGN AND MERCHANDISING, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF HOSPITALITY AND TOURISM MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HOSPITALITY & TOURISM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HOSPITALITY & TOURISM MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HOSPITALITY AND TOURISM MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SUSTAINABLE TOURISM AND HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF HOSPITALITY AND INSTITUTIONAL MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF HOTEL & HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF HOTEL AND HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF HOTELS AND HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ECO-TOURISM, HOTEL AND INSTITUTION MANAGEMENT, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ECOTOURISM & HOSPITALITY MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ECOTOURISM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TOURISM AND HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ECOTOURISM AND HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HOSPITALITY AND TOURISM MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (BIOTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL STUDIES AND COMMUNITY DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL STUDIES (ARTS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CONTROL AND INSTRUMENTATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (INFORMATION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF LIBRARY & INFORMATION SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LIBRARY AND INFORMATION SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LIBRARY AND INFORMATION STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN LIBRARY AND INFORMATION SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN LIBRARY AND KNOWLEDGE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TRAVEL & TOURS OPERATIONS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TRAVEL AND TOURS OPERATIONS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TRAVEL & TOURS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF INTERNATIONAL TOURISM MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PSYCHOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PSYCHOLOGY WITH TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PSYCHOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PSYCHOLOGY (WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNITY DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF COMMUNITY DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MECHATRONIC ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN MASS COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF MASS COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNITY DEVELOPMENT AND ENVIRONMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ELECTRICAL AND COMMUNICATION ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ELECTRICAL AND TELECOMMUNICATION ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF PURCHASING & SUPPLIES MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PURCHASING AND SUPPLIES MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN SUPPLY CHAIN MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LOGISTICS AND SUPPLY CHAIN MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PROCUREMENT AND SUPPLY CHAIN": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR PURCHASING AND SUPPLIES MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PROCUREMENT AND SUPPLIES MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PROCUREMENT AND SUPPLIES MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PROCUREMENT AND LOGISTICS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PROCUREMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MECHANICAL AND INDUSTRIAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF PURCHASING AND SUPPLY CHAIN MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRIBUSINESS MANAGEMENT AND MARKETING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRIBUSINESS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF AGRIBUSINESS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRIBUSINESS MANAGEMENT AND TRADE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PUBLIC MANAGEMENT AND DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN PUBLIC MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MICROBIOLOGY AND BIOTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MICROBIOLOGY AND": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MICROBIOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN INDUSTRIAL MICROBIOLOGY & BIOTECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL MICROBIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MEDICAL MICROBIOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)FRENCH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "French": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (FRENCH)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "French": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANIMAL HEALTH, PRODUCTION & PROCESSING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ANIMAL HEALTH AND PRODUCTION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ANIMAL PRODUCTION AND PROCESSING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANIMAL PRODUCTION & HEALTH MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (GEOGRAPHY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Geography": "C+",
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN GEOGRAPHY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Geography": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOGRAPHY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Geography": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN GEOGRAPHY AND ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Geography": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANIMAL SCIENCE & MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANIMAL SCIENCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANIMAL SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ANIMAL SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANIMAL HEALTH & PRODUCTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ANIMAL HEALTH AND PRODUCTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (INTERNATIONAL RELATIONS AND DIPLOMACY ,WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (INTERNATIONAL RELATIONS AND DIPLOMACY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN INTERNATIONAL RELATIONS AND DIPLOMACY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN INTERNATIONAL RELATIONS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN INTERNATIONAL STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENTREPRENEURSHIP": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENTREPRENEURSHIP AND SMALL ENTERPRISES MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENTREPRENEURSHIP": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENTREPRENEURSHIP AND ENTERPRISE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENTREPRENEURSHIP AND SMALL BUSINESS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENTREPRENUERSHIP & SMALL BUSINESS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENTREPRENEURSHIP STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENTREPRENEURSHIP)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ENTREPRENEURSHIP , WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENTREPRENUERSHIP AND ENTERPRISE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENTREPRENUERSHIP AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS AND ENTREPRENEURSHIP": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF REAL ESTATE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (REAL ESTATE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (PROPERTY MANAGEMENT AND REAL ESTATE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS MANAGEMENT AND INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (GENDER AND DEVELOPMENT STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (GENDER AND DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (GENDER AND SOCIAL STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (DEVELOPMENT STUDIES, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN DEVELOPMENT STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF DEVELOPMENT STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF DEVELOPMENT STUDIES WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS & COMPUTER SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS AND COMPUTER": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS AND COMPUTER SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS & COMPUTER SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS AND COMPUTER SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER SCIENCE AND MATHEMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE MATHEMATICS AND COMPUTER": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION ARTS (HOME ECONOMICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INDUSTRIAL MATHEMATICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ENVIRONMENTAL PLANNING AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL PLANNING & MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL ECONOMICS AND POLICY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (PHYSICAL EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN PHYSICAL EDUCATION AND RECREATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (PHYSICAL EDUCATION AND SPORTS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN TECHNOLOGY (MECHANICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN TECHNOLOGY (MECHANICALTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION TECHNOLOGY (MECHANICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN TECHNOLOGY (ELECTRICAL & ELECTRONIC ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN TECHNOLOGY (ELECTRICAL & ELECTRONIC TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION TECHNOLOGY (ELECTRICAL & ELECTRONICS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN TECHNOLOGY (CIVIL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION IN TECHNOLOGY (BUILDING & CIVIL TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION TECHNOLOGY (CIVIL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN SUSTAINABLE HUMAN DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN CHILD AND YOUTH STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN CHILDCARE AND PROTECTION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN SOCIAL COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (KISWAHILI, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Kiswahili": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (KISWAHILI)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Kiswahili": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN KISWAHILI": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Kiswahili": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (KISWAHILI AND COMMUNICATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Kiswahili": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN KISWAHILI AND MEDIA STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Kiswahili": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)WITH GUIDANCE AND COUNSELLING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (GUIDANCE AND COUNSELLING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION WITH GUIDANCE AND COUNSELLING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PROJECT PLANNING AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PROJECT PLANNING AND": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PROJECT PLANNING MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF PROJECT MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FORESTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (TECHNOLOGY EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNICAL EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SCIENCE)WITH SPECIAL NEEDS EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SCIENCE)WITH GUIDANCE AND COUNSELING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FINANCIAL ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF FINANCIAL ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (COUNSELLING PSYCHOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN COUNSELING PSYCHOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN COUNSELLING PSYCHOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COUNSELLING PSYCHOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (COUNSELLING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PSYCHOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN COUNSELING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF URBAN AND REGIONAL PLANNING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (HISTORY & ECONOMICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN HISTORY AND ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (DAIRY TECHNOLOGY & MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE & HUMAN ECOLOGY EXTENSION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED AQUATIC SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (NATURAL RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (NATURAL RESOURCES MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN NATURAL RESOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MINING AND MINERAL PROCESSING ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ELECTRONIC AND COMPUTER ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER SYSTEMS ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (LAND RESOURCE PLANNING & MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FINANCIAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF LANDSCAPE ARCHITECTURE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD OPERATIONS MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD SERVICE AND HOSPITALITY MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL HORTICULTURE & LANDSCAPING TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (SEED SCIENCE & TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (SOILS & LAND USE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED ANIMAL LABORATORY SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOTECHNOLOGY AND BIOSAFETY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENTOMOLOGY AND PARASITOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ETHNOBOTANY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (HOME SCIENCE AND TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (HOME SCIENCE , WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PHYSICS WITH APPROPRIATE TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PHYSICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PHYSICS, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN PHYSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (SUGAR AND AGRO PROCESSING TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (EMERGENCY MANAGEMENT & HUMANITARIAN ASSISTANCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (LAND ADMINISTRATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (DESIGN)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOPHYSICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (GEOINFORMATION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (NUTRITION AND DIETETICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (HOTEL AND RESTAURANT MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (MEDICAL LABORATORY SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MEDICAL LABORATORY SCIENCES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (BUSINESS INFORMATION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (COMMUNICATION & MEDIA TECHNOLOGY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (COMMUNICATION AND MEDIA)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMMUNITY RESOURCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED COMPUTER SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED COMPUTER SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED COMPUTING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FORESTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PHILOSOPHY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PHILOSOPHY WITH A FOCUS ON PEACE AND SECURITY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN LANGUAGE AND COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN LITERATURE, THEATRE AND FILM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (JOURNALISM AND MASS COMMUNICATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (DRY LAND, AGRICULTURE & ENTERPRISE DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (DRYLAND AGRICULTURE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN DRYLAND RESOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HUMAN NUTRITION AND DIETETICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HUMAN NUTRITION AND DIETETICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE DATA SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN DATA SCIENCE AND ANALYTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN DATA SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF DATA SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL EXTENSION EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL EXTENSION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE AGRICULTURAL EXTENSION AND EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRICULTURAL EXTENSION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRICULTURE EDUCATION & EXTENSION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (AGRICULTURAL EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL EDUCATION AND EXTENSION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL EXTENSION AND RURAL DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF AGRICULTURAL EDUCATION & EXTENSION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF AGRICULTURAL EDUCATION AND EXTENSION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL EDUCATION & EXTENSION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL EXTENSION AND EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE EDUCATION & EXTENSION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE EDUCATION &": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE EDUCATION AND EXTENSION, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE EDUCATION AND EXTENSION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRICULTURAL EDUCATION & EXTENSION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE WITH EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INTEGRATED FOREST RESOURCES MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CROP PROTECTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CROP IMPROVEMENT & PROTECTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNITY HEALTH &": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNITY HEALTH & DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNITY HEALTH AND DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMMUNITY HEALTH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMMUNITY HEALTH AND DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMMUNITY HEALTH PRACTICE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (TECHNICAL AND APPLIED": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (INDUSTRIAL AND APPLIED CHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN INFORMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (EXERCISE & SPORT SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SPORTS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SPORTS SCIENCE & MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HEALTH PROMOTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HEALTH PROMOTION AND SPORTS SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOCHEMISTRY AND MOLECULAR BIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MOLECULAR & CELLULAR BIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION TECHNOLOGY (COMPUTER STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (RELIGION, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (RELIGIOUS STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN RELIGIOUS STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN THEOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF THEOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PASTORAL THEOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF DIVINITY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF THEOLOGY IN PASTORAL STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS LEADERSHIP": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AUTOMOTIVE TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN LEADERSHIP AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LEADERSHIP AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF MANAGEMENT AND LEADERSHIP": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PHILOSOPHY AND LEADERSHIP STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF COMMUNICATION AND MEDIA STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MEDIA AND DIGITAL": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF COMMUNICATION AND PUBLIC RELATIONS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNICATION AND PUBLIC RELATIONS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PUBLIC RELATIONS AND ADVERTISING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF COMMUNICATION & PUBLIC RELATIONS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CORPORATE COMMUNICATION AND MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN DENTAL TECHNOLOGY": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN LEATHER TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BOTANY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PARAMEDIC SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ZOOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PHYSIOTHERAPY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ACCOUNTANCY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED ACCOUNTING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ACCOUNTING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (ENVIRONMENTAL RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (OFFICE ADMINISTRATION AND TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ACCOUNTANCY AND FINANCIAL MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ACCOUNTING AND FINANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ACCOUNTING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (INSTITUTIONAL MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN NETWORKS AND COMMUNICATION SYSTEMS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF THE BUILT ENVIRONMENT (URBAN AND REGIONAL PLANNING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (EVENT AND CONVENTION MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (APPLIED BIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (APPLIED STATISTICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (COMMUNICATION AND COMPUTER NETWORKS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED BIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (SOIL SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD SECURITY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C",
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (SPATIAL PLANNING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (SPATIAL PLANNING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HYDROLOGY AND WATER RESOURCES MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WATER RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WATER AND ENVIRONMENT MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS MANAGEMENT (CIVIL AVIATION MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GRAPHIC, COMMUNICATION AND ADVERTISING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (STRATEGIC MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS - BUSINESS STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Building_Construction": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL PSYCHOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS MANAGEMENT (MARINE BUSINESS MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF APPLIED COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN COMMUNICATION STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ELECTRONICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (AERONAUTICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (NUTRACEUTICAL SCIENCE AND TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ELECTRONICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INDUSTRIAL CHEMISTRY WITH MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (FINE ART, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (FINE ARTS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF CO-OPERATIVE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF CO-OPERATIVES AND COMMUNITY DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CO-OPERATIVE AND ENTREPRENEURSHIP MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMPUTER SECURITY AND FORENSICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER SECURITY AND": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER SECURITY AND FORENSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN INFORMATION SECURITY AND FORENSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CLOUD COMPUTING AND INFORMATION SECURITY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CYBER SECURITY AND DIGITAL FORENSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (RENEWABLE ENERGY AND ENVIRONMENTAL PHYSICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CHEMISTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Chemistry": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN POLYMER CHEMISTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FISHERIES AND NATURAL RESOURCES, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FISHERIES & AQUATIC SCIENCES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FISHERIES AND AQUACULTURE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AQUACULTURE AND FISHERIES TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AQUACULTURE TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AQUACULTURE AND FISHERIES MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FISHERIES AND AQUACULTURE TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (LINGUISTIC)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (HISTORY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "HAG": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN HISTORY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "HAG": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (HISTORY AND ARCHAEOLOGY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "HAG": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (HISTORY AND ARCHAEOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "HAG": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (LITERATURE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (LITERATURE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (LINGUISTICS AND LITERATURE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (RENEWABLE ENERGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (RENEWABLE ENERGY AND BIOFUELS TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (ELECTRICAL AND ELECTRONIC ENGINEERING TECHNOLOGY)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN ELECTRICAL AND ELECTRONIC ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL HEALTH SCIENCES (PUBLIC HEALTH)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FISHERIES AND OCEANOGGRAPHY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (CIVIL ENGINEERING TECHNOLOGY)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN CIVIL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (OPERATIONS RESEARCH)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN MEDICAL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (MECHANICAL ENGINEERING TECHNOLOGY)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN MECHANICAL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BUSINESS COMPUTING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN MARINE ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF PHILOSOPHY IN TECHNOLOGY (SURVEYING TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FINANCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ECONOMICS & FINANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ECONOMICS AND FINANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BANKING AND FINANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FINANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN SOFTWARE DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HEALTH RECORDS & INFORMATION MGT.)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HEALTH RECORDS AND INFORMATICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HEALTH RECORDS MANAGEMENT & INFORMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE HEALTH INFORMATION MANAGEMENT AND INFORMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HEALTH RECORDS AND INFORMATION MANAGEMENT, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (DISASTER MANAGEMENT, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN GLOBAL HEALTH AND TRAVEL MEDICINE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIO-RESOURCES MANAGEMENT AND CONSERVATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MARITIME MANAGEMENT (COMMERCIAL)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MARITIME STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (DISASTER RISK MANAGEMENT AND SUSTAINABLE DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (DISASTER MANAGEMENT AND SUSTAINABLE DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (POLITICAL SCIENCE & PUBLIC ADMINISTRATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (POLITICAL SCIENCE AND PUBLIC ADMINISTRATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN POLITICAL SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN POLITICAL SCIENCE AND PUBLIC ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PUBLIC ADMINISTRATION AND POLITICAL SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN POLITICAL SCIENCE WITH TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (POLITICAL SCIENCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (POLITICAL SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF APPLIED SCIENCE (GEO-INFORMATICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BUSINESS INFORMATION SYSTEMS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE CLINICAL MEDICINE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CLINICAL MEDICINE AND COMMUNITY HEALTH": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CLINICAL MEDICINE": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE CLINICAL MEDICINE AND COMMUNITY HEALTH": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PHYSICAL THERAPY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF RADIOGRAPHY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (APPLIED BIOENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COASTAL & MARINE RESOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MARINE BIOLOGY & FISHERIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MARINE RESOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (POPULATION HEALTH)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED OPTICS AND LASERS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FORENSIC SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (ARTS)FINE ART": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (RECREATION AND SPORTS MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PETROLEUM ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AEROSPACE ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL CHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PETROLEUM CHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL BIOCHEMISTRY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (UTILIZATION & SUSTAINABILITY OF ARID LANDS (USAL)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (ENGLISH & COMMUNICATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "English": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS AND FINANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PHILOSOPHY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (BUSINESS STUDIES, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRIBUSINESS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS & ECONOMICS, WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS AND ECONOMICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ECONOMICS AND MATHEMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN MATHEMATICS AND ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (SUSTAINABLE ENERGY & CLIMATE CHANGE SYSTEMS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CLIMATE CHANGE AND DEVELOPMENT, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CLIMATE CHANGE ADAPTATION AND SUSTAINABLE DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CLIMATE CHANGE AND AGROFORESTRY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL BIOTECHNOLOGY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MEDICAL BIOTECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRONOMY, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL BIOTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE & BIOTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURE AND BIOTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF CONFLICT RESOLUTION AND HUMANITAIRAN ASSISTANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN CONFLICT RESOLUTION AND HUMANITARIAN ASSISTANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (OPTOMETRY AND VISION SCIENCES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PENOLOGY, CORRECTION AND ADMINISTRATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (CHEMICAL AND PROCESS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (CHEMICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN MASS MEDIA AND COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN MEDIA AND COMMUNICATION STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (SOCIOLOGY AND ANTHROPOLOGY, WITH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS & BUSINESS STUDIES, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF CO-OPERATIVE BUSINESS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CONSERVATION BIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTING AND INFORMATION SYSTEMS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (AGRICULTURAL ECONOMICS AND RURAL DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (CIVIL & STRUCTURAL": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (CIVIL AND STRUCTURAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CIVIL AND STRUCTURAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (ELECTRICAL AND ELECTRONIC ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (ELECTRICAL AND ELECTRONICS ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN GEOMATICS AND GEOSPATIAL INFORMATION SYSTEMS": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN GEOINFORMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOMATIC ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN COMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (LANGUAGE AND COMMUNICATION, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (LINGUISTICS, MEDIA AND COMMUNICATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF LINGUISTICS AND COMMUNICATION STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN HISTORY & INTERNATIONAL STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "HAG": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (RENEWABLE ENERGY TECHNOLOGY AND MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN RENEWABLE ENERGY AND TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN RENEWABLE ENERGY TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (RENEWABLE ENERGY TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ISLAMIC STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (LIBRARY SCIENCE)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN EPIDEMIOLOGY AND BIOSTATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN EPIDEMIOLOGY AND MEDICAL STATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOSTATISTICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ISLAMIC SHARIA": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF HEALTH SERVICES MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF DISASTER MANAGEMENT & INTERNATIONAL DIPLOMACY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (ECONOMICS, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (ECONOMICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ECONOMICS AND BUSINESS STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN INTERNATIONAL BUSINESS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS INFORMATION AND MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF JUSTICE AND PEACE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF CHRISTIAN EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ACCOUNTING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION IN ACCOUNTING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ACCOUNTING & FINANCE, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (SPECIAL NEEDS EDUCATION - SECONDARY OPTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION SPECIAL NEEDS EDUCATION SECONDARY OPTION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HEALTH SYSTEMS MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HEALTH SYSTEMS MANAGEMENT AND ECONOMICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HEALTH SYSTEMS MANAGEMENT AND DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF PUBLIC POLICY AND ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF MUSIC (TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF MUSIC PRODUCTION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "MUC": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PEACE AND CONFLICT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PEACE AND CONFLICT STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN STATISTICS AND PROGRAMMING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN STATISTICS AND INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (URBAN DESIGN AND DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ARABIC LANGUAGE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PEACE STUDIES AND CONFLICT RESOLUTION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PUBLIC ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN PUBLIC ADMINISTRATION AND GOVERNANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN SECURITY STUDIES AND CRIMINOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN CONFLICTS AND SECURITY STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF COUNSELING PSYCHOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (CONSTRUCTION MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN FINANCE AND STATISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (EARLY CHILDHOOD & PRIMARY EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (EARLY CHILDHOOD AND PRIMARY EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION (EARLY CHILDHOOD DEVELOPMENT EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HEALTH RECORDS AND INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN HEALTH RECORDS AND INFORMATION MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HEALTH RECORDS AND INFORMATION MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HEALTH RECORDS AND INFORMATION TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN REAL ESTATE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN TRAVEL AND TOURISM": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TOURISM AND TRAVEL MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SOCIAL WORK AND ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL STUDIES (ENVIRONMENTAL RESOURCE CONSERVATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ENVIRONMENTAL SCIENCE (RESOURCE CONSERVATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ANIMAL HEALTH MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOGRAPHY AND NATURAL RESOURCE MANAGEMENT, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Geography": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (BIOMEDICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (ELECTRICAL AND TELECOMMUNICATION ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (CHEMICAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN TELECOMMUNICATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN TELECOMMUNICATION AND INFORMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS (PURE MATHEMATICS, APPLIED MATHEMATICS AND STATISTICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS AND MODELLING PROCESSES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS & PHYSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (MECHANICAL & PRODUCTION ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (MECHANICAL AND PRODUCTION ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOSPATIAL INFORMATION SCIENCE)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN GEOSPATIAL INFORMATION SCIENCE AND REMOTE SENSING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FOOD SCIENCE AND MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C",
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE INDUSTRIAL BIOTECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PUBLIC HEALTH, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (PUBLIC HEALTH)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN PUBLIC HEALTH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF PUBLIC HEALTH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (DISASTER MITIGATION AND SUSTAINABLE DEVELOPMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (URBAN AND REGIONAL PLANNING, WITH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (CONSTRUCTION MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE AGRIBUSINESS MANAGEMENT AND ENTERPRISE DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRIBUSINESS MANAGEMENT AND ENTREPRENEURSHIP": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (SOCIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN SOCIOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (SOCIAL WORK AND SOCIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN SOCIOLOGY AND TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (FORENSIC BIOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOSPATIAL INFORMATION SCIENCE, WITH IT)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Geography": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (HOSPITALITY MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN STATISTICS & COMPUTER SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (BUILDING CONSTRUCTION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN BUILDING CONSTRUCTION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN CONSTRUCTION MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL RESOURCE MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENTAL MANAGEMENT AND CONSERVATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNITY RESOURCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (COMMUNITY RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BA IN INTER-CULTURAL STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BA IN CHURCH EDUCATIONAL MINISTRIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BA IN BIBLICAL STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN COMPUTER AND ELECTRONIC SYSTEMS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ORAL HEALTH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN LABORATORY TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMMUNITY HEALTH EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MEDICAL SOCIAL WORK)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENERGY AND ENVIRONMENTAL TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED PHYSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY EDUCATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Physics": "C+",
+      "Mathematics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ANIMAL PRODUCTS TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF HOTEL MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF CATERING AND HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN WATER, IRRIGATION AND ENVIRONMENTAL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN MECHANICAL VENTILATION AND AIR CONDITIONING": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (GENDER, WOMEN AND DEVELOPMENT STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN JOURNALISM AND DIGITAL MEDIA": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN LABORATORY SCIENCES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (LABORATORY SCIENCE AND TECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (COUNSELING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF FILM AND ANIMATION STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF FILM PRODUCTION AND ANIMATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INSTRUMENTATION & CONTROL)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (HUMAN RIGHTS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (PEACE EDUCATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS INTERIOR DESIGN": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN DESIGN (INTERIOR DESIGN, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (INFORMATION SYSTEMS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENVIRONMENTAL SCIENCE AND RESOURCE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN PROCUREMENT AND CONTRACT MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BUSINESS INNOVATION AND TECHNOLOGY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MARKETING, INNOVATION AND TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY (TELECOMMUNICATION AND INFORMATION ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (GEOPHYSICS AND MINERALOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN TRANSLATION STUDIES": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF INDUSTRIAL TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRIBUSINESS ECONOMICS AND FOOD INDUSTRY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN GAMING AND ANIMATION TECHNOLOGY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN ENVIRONMENT, LANDS AND SUSTAINABLE INFRASTRUCTURE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MATHEMATICS WITH COMPUTING)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (FRENCH)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (GERMAN)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WATER AND ENVIRONMENTAL ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN SOIL ENVIRONMENT & LAND USE MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF INFORMATION SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (FRENCH, WITH IT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN KISWAHILI AND GEOGRAPHY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Geography": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN COSMETOLOGY AND BEAUTY SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF MANAGEMENT AND OFFICE ADMINISTRATION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN APPLIED PHYSICS (ELECTRONICS & INSTRUMENTATION)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN ELECTRICAL AND COMPUTER ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE CHEMISTRY (INORGANIC, PHYSICAL AND ORGANIC OPTIONS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN RENEWABLE ENERGY & ENVIRONMENTAL PHYSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF BUSINESS ADMINISTRATION IN FINANCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (ENERGY ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED PHYSICS AND COMPUTER SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER SCIENCE AND APPLIED PHYSICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN WATER, SANITATION AND HABITAT ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRICULTURE AND EXTENSION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN ENGLISH AND LINGUISTICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN INSTRUMENTATION & CONTROL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (MINING PHYSICS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING PHYSICS": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATHEMATICS AND STATISTICS WITH IT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN CHAPLAINCY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN APPLIED STATISTICS AND DATA SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF EDUCATION SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ECONOMICS AND MATHEMATICS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE GENOMIC SCIENCE": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Biology": "C+",
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MATERIALS AND METALLURGICAL ENGINEERING": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN HOSPITALITY MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN MIDWIFERY WITH REPRODUCTIVE HEALTH": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Biology": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF ENGINEERING (MANUFACTURING, INDUSTRIAL AND TEXTILE ENGINEERING)": {
+    "min_mean_grade": "B-",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (WATER RESOURCES AND ENVIRONMENT MANAGEMENT)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE (DISASTER PREPAREDNESS AND ENVIRONMENTALTECHNOLOGY)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (DISASTER MANAGEMENT AND PEACE STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS (SOCIOLOGY & RELIGIOUS STUDIES)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF ARTS IN RELIGION": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRICULTURAL ECONOMICS AND RURAL DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN COMPUTER INFORMATION SYSTEMS": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C+",
+      "Physics": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF TECHNOLOGY IN APPLIED CHEMISTRY (ANALYTICAL AND INDUSTRIAL OPTIONS)": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C",
+      "Physics": "C",
+      "Chemistry": "C+"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN BIOSAFETY AND BIOSECURITY": {
+    "min_mean_grade": "C+",
+    "required_subjects": {},
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN RANGELAND ECOSYSTEM MANAGEMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Chemistry": "C"
+    },
+    "level": "Degree"
+  },
+  "BACHELOR OF SCIENCE IN AGRIBUSINESS MANAGEMENT AND ENTERPRISE DEVELOPMENT": {
+    "min_mean_grade": "C+",
+    "required_subjects": {
+      "Mathematics": "C"
+    },
+    "level": "Degree"
+  }
 }

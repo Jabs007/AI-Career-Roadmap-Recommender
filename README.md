@@ -65,6 +65,20 @@ This application is a specialized **Decision Support System (DSS)** designed for
     streamlit run app.py
     ```
 
+5.  **🔄 Update Job Market Data (Optional)**
+    
+    To get the latest job market data for more accurate recommendations:
+    ```bash
+    python update_jobs.py
+    ```
+    
+    This automatically:
+    - Scrapes fresh jobs from MyJobMag Kenya
+    - Updates demand metrics
+    - Refreshes the recommendation engine
+    
+    💡 **Tip**: Set up daily automated updates! See [`docs/AUTO_UPDATE_GUIDE.md`](docs/AUTO_UPDATE_GUIDE.md) for details.
+
 ## 🔍 How It Works
 
 1.  **Phase 1: Academic Identity**: User enters their KCSE Mean Grade and specific subject scores (Math, Eng, Sciences, etc.).
