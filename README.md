@@ -107,6 +107,15 @@ The system dynamically adapts its output based on the student's eligibility stat
 
 Contributions are welcome! Please feel free to submit a Pull Request. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
+## 🔮 Future Improvements & Roadmap
+
+We are actively working on the following enhancements to meet rigorous academic and professional standards. See [`docs/FUTURE_ROADMAP.md`](docs/FUTURE_ROADMAP.md) for details.
+
+*   **🧪 Test Coverage**: Adding comprehensive unit tests for Eligibility logic and NLP accuracy.
+*   **📊 Evaluation Metrics**: Implementing a `evaluations/` module to measure Precision@k and Rank Correlation.
+*   **📐 Visual Architecture**: Developing a complete `system_architecture.png` diagram.
+*   **📸 Example Scenarios**: Expanding the README with detailed output logs for "Aspirational" and "Bridge" cases.
+
 ## ⚠️ Disclaimer
 
 *   **Referential Data**: Recommendations are based on historical KUCCPS data and scraped market trends. They do not guarantee university placement or employment.
