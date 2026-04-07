@@ -1,7 +1,7 @@
-from .nlp_preprocessing import preprocess_text, get_bert_embedding
-import torch
-from sklearn.feature_extraction.text import TfidfVectorizer
-import numpy as np
+from .nlp_preprocessing import preprocess_text, get_bert_embedding # type: ignore
+import torch # type: ignore
+from sklearn.feature_extraction.text import TfidfVectorizer # type: ignore
+import numpy as np # type: ignore
 
 # Department keywords from extract_jobs.py (copied for independence)
 department_keywords = {
@@ -10,13 +10,19 @@ department_keywords = {
         "analyst", "information technology", "computer", "network", "support", "systems",
         "cloud", "security", "database", "web", "frontend", "backend", "fullstack",
         "coding", "programming", "software engineering", "it", "hardware", "tech",
-        "apps", "mobile", "internet", "coding", "algorithm", "devops", "code", "coder", "website",
+        "apps", "mobile", "internet", "algorithm", "devops", "code", "coder", "website",
         "python", "javascript", "java", "c#", "rust", "go", "php", "ruby", "sql", "flutter", "react",
-        "node", "typescript", "swift", "kotlin", "android", "ios", "aws", "azure", "docker", "kubernetes"
+        "node", "typescript", "swift", "kotlin", "android", "ios", "aws", "azure", "docker", "kubernetes",
+        "artificial intelligence", "fintech", "edtech", "healthtech", "saas", "api", "microservices",
+        "blockchain", "nft", "web3", "chatbot", "llm", "gpt", "automation", "rpa", "erp", "crm",
+        "safaricom", "mpesa", "m-pesa", "ict authority", "konza", "silicon savannah"
     ],
     "Business": [
         "business", "operations", "strategy", "manager", "consultant", "entrepreneur",
-        "logistics", "supply chain", "management", "administration", "leadership", "commerce", "startup"
+        "logistics", "supply chain", "management", "administration", "leadership", "commerce", "startup",
+        "ceo", "director", "executive", "procurement", "tender", "kra", "nairobi stock exchange",
+        "nse", "import", "export", "trade", "distributor", "retailer", "wholesale", "franchisor",
+        "business plan", "pitch", "investor", "venture", "scaling", "growth hacking"
     ],
     "Education": [
         "teacher", "lecturer", "education", "instructor", "tutor", "training",
@@ -24,7 +30,11 @@ department_keywords = {
     ],
     "Finance & Accounting": [
         "accountant", "finance", "auditor", "economist", "investment", "bookkeeper",
-        "financial", "tax", "cpa", "controller", "budget", "accounting", "banking", "audit", "money"
+        "financial", "tax", "cpa", "controller", "budget", "accounting", "banking", "audit", "money",
+        "cfa", "acca", "kra", "kenya revenue authority", "vat", "corporate tax", "payroll",
+        "equity bank", "kcb", "co-operative bank", "absa", "stanbic", "treasury",
+        "financial modelling", "cash flow", "balance sheet", "income statement", "forex",
+        "microfinance", "sacco", "insurance", "actuarial", "wealth management"
     ],
     "Healthcare & Medical": [
         "nurse", "doctor", "pharmacist", "medical", "clinical", "health", "surgeon",
@@ -32,7 +42,11 @@ department_keywords = {
         "nutritionist", "psychiatrist", "medicine", "dentistry", "pharmacy", "patient",
         "care", "healthcare", "therapy", "hospital", "surgery", "anatomy", "biology",
         "diseases", "pathology", "pharmaceuticals", "public health", "physiology",
-        "nursing", "midwifery", "diagnostics", "treatment", "human health", "biologist", "science"
+        "nursing", "midwifery", "diagnostics", "treatment", "human health", "biologist", "science",
+        "knh", "kenyatta national hospital", "aga khan", "nairobi hospital", "moi teaching",
+        "nhif", "ministry of health", "clinical officer", "community health", "hiv", "malaria",
+        "cancer", "oncology", "radiology", "ophthalmology", "ent", "paediatrics", "geriatrics",
+        "orthodontics", "teeth", "maxillofacial"
     ],
     "Engineering": [
         "engineer", "mechanical", "civil", "electrical", "technician", "biomedical",
@@ -56,8 +70,8 @@ department_keywords = {
     ],
     "Law": [
         "lawyer", "legal", "attorney", "advocate", "compliance", "legal officer", "paralegal",
-        "regulatory", "litigation", "contract", "corporate law", "law", "justice", "judiciary",
-        "courts", "arbitration"
+        "regulatory", "litigation", "corporate law", "law", "justice", "judiciary",
+        "courts", "arbitration", "jurisprudence"
     ],
     "Arts & Media": [
         "artist", "musician", "painter", "graphic designer", "illustrator", "videographer",
@@ -90,11 +104,16 @@ department_keywords = {
     "Data Science & Analytics": [
         "data analyst", "data scientist", "big data", "statistics", "mathematics",
         "tableau", "power bi", "sql", "excel", "visualization", "predictive modeling",
-        "machine learning", "data mining", "math", "analysis"
+        "machine learning", "data mining", "math", "analysis",
+        "r programming", "pandas", "numpy", "scikit-learn", "tensorflow", "keras", "pytorch",
+        "business intelligence", "etl", "data pipeline", "data warehouse", "data lake",
+        "a/b testing", "regression", "classification", "clustering", "neural network",
+        "natural language processing", "nlp", "computer vision", "deep learning",
+        "google analytics", "looker", "metabase", "data storytelling", "insight"
     ],
     "Project Management": [
-        "project manager", "pmp", "agile", "scrum", "planning", "delivery", "stakeholder",
-        "budgeting", "coordination", "implementation"
+        "project manager", "pmp", "agile", "scrum", "stakeholder",
+        "budgeting", "coordination", "prince2", "project lifecycle"
     ],
     "Renewable Energy & Environment": [
         "solar", "wind", "renewable", "energy", "sustainability", "environmental",

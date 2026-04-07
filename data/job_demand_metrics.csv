@@ -1,3 +1,18 @@
 Department,job_count,demand_score
-Information Technology,249,1.0
-Marketing & Sales,1,0.004016064257028112
+Agriculture & Environmental,2,0.05405405405405406
+Arts & Media,1,0.02702702702702703
+Aviation & Logistics,5,0.13513513513513514
+Business,37,1.0
+Data Science & Analytics,2,0.05405405405405406
+Education,8,0.21621621621621623
+Engineering,6,0.16216216216216217
+Finance & Accounting,7,0.1891891891891892
+Healthcare & Medical,8,0.21621621621621623
+Human Resources,1,0.02702702702702703
+Information Technology,30,0.8108108108108109
+Law,4,0.10810810810810811
+Marketing & Sales,6,0.16216216216216217
+Project Management,5,0.13513513513513514
+Renewable Energy & Environment,1,0.02702702702702703
+Security & Protective Services,1,0.02702702702702703
+Social Sciences & Community,1,0.02702702702702703

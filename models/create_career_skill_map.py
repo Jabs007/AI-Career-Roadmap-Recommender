@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # type: ignore
 import json
 
 # Copy department_keywords from interest_vectorizer.py

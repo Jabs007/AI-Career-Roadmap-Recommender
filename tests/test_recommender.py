@@ -1,9 +1,9 @@
 import unittest
-import pandas as pd
+import pandas as pd # type: ignore
 import json
 import os
 import configparser
-from models.recommender import CareerRecommender
+from models.recommender import CareerRecommender # type: ignore
 
 class TestCareerRecommender(unittest.TestCase):
     def setUp(self):
@@ -109,8 +109,8 @@ class TestCareerRecommender(unittest.TestCase):
         self.assertIn('comprehensive_rationale', first_rec)
         self.assertIn('programs', first_rec)
         
-        # Check if Technology is the top recommendation
-        self.assertEqual(first_rec['dept'], 'Technology')
+        # Check if Information Technology is the top recommendation
+        self.assertEqual(first_rec['dept'], 'Information Technology')
 
 if __name__ == '__main__':
     unittest.main()

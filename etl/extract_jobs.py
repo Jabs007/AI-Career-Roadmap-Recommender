@@ -1,17 +1,18 @@
 import os
 import json
 import time
-import pandas as pd
+import re
+import pandas as pd # type: ignore
 from pathlib import Path
 from datetime import datetime
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
-from thefuzz import fuzz
+from selenium import webdriver # type: ignore
+from selenium.webdriver.chrome.service import Service # type: ignore
+from selenium.webdriver.chrome.options import Options # type: ignore
+from selenium.webdriver.common.by import By # type: ignore
+from selenium.webdriver.support.ui import WebDriverWait # type: ignore
+from selenium.webdriver.support import expected_conditions as EC # type: ignore
+from webdriver_manager.chrome import ChromeDriverManager # type: ignore
+from thefuzz import fuzz # type: ignore
 
 # -------------------------------
 # 🪵 UTILITY- Log Function
@@ -132,11 +133,114 @@ department_keywords = {
 
 def classify_department(job_title, description="", skills=""):
     text = f"{job_title} {description} {skills}".lower()
+    title_lower = job_title.lower()
+    
+    best_dept = "Other"
+    max_score = 0
+    
     for dept, keywords in department_keywords.items():
+        score = 0
         for kw in keywords:
-            if kw.lower() in text:
-                return dept
-    return "Other"
+            kw_lower = kw.lower()
+            # Use word boundaries to prevent 'it' matching 'with'
+            pattern = r'\b' + re.escape(kw_lower) + r'\b'
+            
+            if re.search(pattern, text):
+                score += 1
+                # Weight job title heavily
+                if re.search(pattern, title_lower):
+                    score += 5
+                    
+        if score > max_score:
+            max_score = score
+            best_dept = dept
+            
+    return best_dept
+
+# --- Normalization helpers ---
+NORMALIZE_MAP_BUILTIN = {
+    # IT
+    'IT': 'Information Technology', 'I.T.': 'Information Technology', 'Information Tech': 'Information Technology',
+    # Business family
+    'Sales & Marketing': 'Marketing & Sales', 'Sales/Marketing': 'Marketing & Sales', 'Marketing': 'Marketing & Sales', 'Sales': 'Marketing & Sales',
+    'Accounting/Finance': 'Finance & Accounting', 'Finance': 'Finance & Accounting', 'Accounting': 'Finance & Accounting',
+    'Admin & Support': 'Administration & Support', 'Administration': 'Administration & Support',
+    'Business Development': 'Business', 'Operations': 'Business', 'Customer Service': 'Business',
+    'Real Estate': 'Real Estate & Property', 'Property': 'Real Estate & Property',
+    # Education
+    'Education/Teaching': 'Education', 'Teaching': 'Education', 'Education': 'Education', 'Teacher': 'Education', 'Lecturer': 'Education',
+    # Data / Analytics
+    'Data/Analytics': 'Data Science & Analytics', 'Data Science': 'Data Science & Analytics', 'Analytics': 'Data Science & Analytics',
+    # Project Management
+    'Project/Program Management': 'Project Management', 'Programme Management': 'Project Management',
+    # Agriculture & Environment
+    'Agriculture': 'Agriculture & Environmental', 'Environment': 'Agriculture & Environmental', 'Environmental': 'Agriculture & Environmental', 'Horticulture': 'Agriculture & Environmental', 'Livestock': 'Agriculture & Environmental',
+    # Law
+    'Legal': 'Law', 'Legal & Compliance': 'Law', 'Law': 'Law',
+    # Healthcare
+    'Healthcare': 'Healthcare & Medical', 'Medical': 'Healthcare & Medical', 'Nursing': 'Healthcare & Medical', 'Pharmacy': 'Healthcare & Medical', 'Dentistry': 'Healthcare & Medical', 'Veterinary': 'Healthcare & Medical',
+    # HR
+    'Human Resource': 'Human Resources', 'Human Resources': 'Human Resources', 'HR': 'Human Resources',
+    # Renewable Energy & Environment
+    'Renewable Energy': 'Renewable Energy & Environment', 'Environment & Conservation': 'Renewable Energy & Environment'
+}
+
+def load_external_category_map():
+    try:
+        base = Path(__file__).resolve().parents[1]
+        path = base / 'data' / 'category_mappings.json'
+        if path.exists():
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data if isinstance(data, dict) else {}
+    except Exception:
+        pass
+    return {}
+
+_DEF_PATTERNS = [
+    (r'nurs|pharm|dent|clinic|medical|health|vet', 'Healthcare & Medical'),
+    (r'human resource|\bhr\b|recruit|talent', 'Human Resources'),
+    (r'teacher|lectur|education|tsc|school', 'Education'),
+    (r'sales|marketing|brand|seo|sem|growth', 'Marketing & Sales'),
+    (r'agri|farm|horti|soil|crop|livestock', 'Agriculture & Environmental'),
+    (r'environ|ecolog|conserv|renewable|solar|wind|energy', 'Renewable Energy & Environment'),
+    (r'data|analytics?|machine learning|\bml\b|\bai\b|business intelligence|\bbi\b', 'Data Science & Analytics'),
+    (r'project manager|program manager|\bpmo\b|project', 'Project Management'),
+    (r'law|legal|advocate|attorney|compliance', 'Law'),
+    (r'account|finance|auditor|\bcpa\b|bookkeep|treasury', 'Finance & Accounting'),
+    (r'software|developer|engineer|\bit\b|systems|network|cyber|cloud|devops', 'Information Technology'),
+]
+
+def infer_dept_from_text(text: str) -> str:
+    s = (text or '').lower()
+    for pat, dep in _DEF_PATTERNS:
+        try:
+            if re.search(pat, s):
+                return dep
+        except Exception:
+            continue
+    return ''
+
+def normalize_department(raw: str, fallback_text: str = '') -> str:
+    raw = (raw or '').strip()
+    cat_map = {**NORMALIZE_MAP_BUILTIN, **load_external_category_map()}
+    if raw:
+        return cat_map.get(raw, raw)
+    # try inference
+    guess = infer_dept_from_text(fallback_text)
+    return guess if guess else raw
+
+
+def extract_category_from_description(desc: str) -> str:
+    try:
+        for line in (desc or '').split('\n'):
+            if ':' in line:
+                k, v = line.split(':', 1)
+                if k.strip().lower() in ['category', 'function', 'industry', 'department']:
+                    return v.strip()
+    except Exception:
+        pass
+    return ''
 
 def classify_location(location_text):
     # TODO: Implement robust location classification (Remote, On-site, Hybrid)
@@ -203,32 +307,50 @@ def scrape_myjobmag(pages=5, headless=True, delay=1.5,
                         return ""
 
                     location = extract_field("Location")
-
                     skills = extract_field("Skills")
+                    raw_category = extract_field("Category") or extract_field("Function") or extract_field("Industry")
+                    if not raw_category:
+                        raw_category = extract_category_from_description(description)
+
+                    # Department classification fallback
+                    classified_dept = classify_department(job_title, description, skills)
+                    # Normalize Dept using mapping + inference (prefer explicit category if present)
+                    dept_norm = normalize_department(classified_dept, f"{job_title} {description} {skills}")
+
                     job_data = {
                         "Job Title": job_title,
                         "Company": company_name,
                         "Description": description,
                         "Minimum Qualification": extract_field("Qualification"),
                         "Skills Required": skills,
+                        "Skillmentequired": skills,  # keep compatibility
                         "Location": location,
                         "Work Type": classify_location(location),
                         "Years of Experience": extract_field("Experience"),
-                        "Department": classify_department(job_title, description, skills)
+                        "Category": raw_category,
+                        "Department": classified_dept,
+                        "DeptNorm": dept_norm,
+                        "Url": job_link
                     }
 
                 except Exception as e:
                     log(f"Failed to extract job from: {job_link}")
+                    classified_dept = classify_department(job_title, "", "")
+                    dept_norm = normalize_department(classified_dept, job_title)
                     job_data = {
                         "Job Title": job_title,
                         "Company": company_name,
                         "Description": "",
                         "Minimum Qualification": "",
                         "Skills Required": "",
+                        "Skillmentequired": "",
                         "Location": "",
                         "Work Type": "Unclear",
                         "Years of Experience": "",
-                        "Department": classify_department(job_title, "", "")
+                        "Category": "",
+                        "Department": classified_dept,
+                        "DeptNorm": dept_norm,
+                        "Url": job_link
                     }
 
                 try:

@@ -1,0 +1,77 @@
+[
+    {
+        "id": "Test_Profile_A",
+        "student_text": "I love painting and drawing arts.",
+        "kcse_results": {
+            "mean_grade": "B",
+            "subjects": {
+                "Mathematics": "C+",
+                "English": "B",
+                "Kiswahili": "B",
+                "Biology": "B-",
+                "Physics": "C+",
+                "Chemistry": "C+",
+                "Geography": "B+",
+                "Business Studies": "A"
+            }
+        },
+        "relevant_departments": ["Arts & Media"],
+        "description": "High Artistic Interest, Moderate Grades"
+    },
+    {
+        "id": "Test_Profile_B",
+        "student_text": "I want to code software and build apps.",
+        "kcse_results": {
+            "mean_grade": "A",
+            "subjects": {
+                "Mathematics": "A",
+                "English": "A",
+                "Kiswahili": "A-",
+                "Biology": "A",
+                "Physics": "A",
+                "Chemistry": "A-",
+                "Computer Studies": "A"
+            }
+        },
+        "relevant_departments": ["Information Technology"],
+        "description": "High Tech Interest, Excellent Grades"
+    },
+    {
+        "id": "Test_Profile_C",
+        "student_text": "I like helping people in hospitals.",
+        "kcse_results": {
+            "mean_grade": "B-",
+            "subjects": {
+                "Mathematics": "C",
+                "English": "B-",
+                "Kiswahili": "C+",
+                "Biology": "B",
+                "Physics": "C-",
+                "Chemistry": "C",
+                "Geography": "B",
+                "History": "B-"
+            }
+        },
+        "relevant_departments": ["Healthcare & Medical"],
+        "description": "High Health Interest, Average Grades"
+    },
+    {
+        "id": "Test_Profile_D",
+        "student_text": "I am good at math and money management.",
+        "kcse_results": {
+            "mean_grade": "B+",
+            "subjects": {
+                "Mathematics": "A",
+                "English": "B+",
+                "Kiswahili": "B",
+                "Biology": "B-",
+                "Physics": "B+",
+                "Chemistry": "B",
+                "Business Studies": "A-",
+                "Geography": "B"
+            }
+        },
+        "relevant_departments": ["Finance & Accounting"],
+        "description": "High Business Interest, Good Grades"
+    }
+]

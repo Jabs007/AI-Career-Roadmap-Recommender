@@ -1,4 +1,4 @@
-import pytest
+import pytest # type: ignore
 from models.interest_classifier import InterestClassifier
 
 # We mock the underlying vectorizer in the classifier if needed, 

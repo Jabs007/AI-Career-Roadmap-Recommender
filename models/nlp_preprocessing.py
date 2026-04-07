@@ -1,9 +1,9 @@
-import nltk
+import nltk # type: ignore
 import re
-import torch
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
+import torch # type: ignore
+from nltk.corpus import stopwords # type: ignore
+from nltk.tokenize import word_tokenize # type: ignore
+from nltk.stem import WordNetLemmatizer # type: ignore
 from transformers import DistilBertTokenizer, DistilBertModel
 
 # Download required NLTK data
@@ -23,7 +23,7 @@ def get_fallback_vector(text: str):
     
     if _FALLBACK_VOCAB is None:
         try:
-            from .interest_vectorizer import department_keywords
+            from .interest_vectorizer import department_keywords # type: ignore
             vocab = set()
             for keywords in department_keywords.values():
                 for k in keywords:
@@ -60,7 +60,7 @@ def get_bert_embedding(text: str, model_name: str = 'distilbert-base-uncased'):
     try:
         # Try to load model/tokenizer only once
         if not hasattr(get_bert_embedding, "_cached_assets"):
-            from transformers import AutoTokenizer, AutoModel
+            from transformers import AutoTokenizer, AutoModel # type: ignore
             tokenizer = AutoTokenizer.from_pretrained(model_name)
             model = AutoModel.from_pretrained(model_name, low_cpu_mem_usage=False)
             model.eval()

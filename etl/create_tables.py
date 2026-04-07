@@ -1,6 +1,6 @@
 # etl/create_tables.py
 
-from database import create_connection
+from database import create_connection # type: ignore
 
 def create_tables():
     connection = create_connection()

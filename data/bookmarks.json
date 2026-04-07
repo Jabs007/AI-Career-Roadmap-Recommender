@@ -1,0 +1,18 @@
+[
+  {
+    "dept": "Information Technology",
+    "timestamp": "2025-12-23T03:53:51",
+    "status": "ELIGIBLE",
+    "final_score": 0.7928899407386779,
+    "interest_score": 0.30963313579559326,
+    "demand_score": 1.0
+  },
+  {
+    "dept": "Information Technology",
+    "timestamp": "2025-12-23T03:54:13",
+    "status": "ELIGIBLE",
+    "final_score": 0.7928899407386779,
+    "interest_score": 0.30963313579559326,
+    "demand_score": 1.0
+  }
+]

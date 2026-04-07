@@ -1,8 +1,8 @@
 # etl/courses.py
 
-import pandas as pd
-import mysql.connector
-from mysql.connector import Error
+import pandas as pd # type: ignore
+import mysql.connector # type: ignore
+from mysql.connector import Error # type: ignore
 
 def get_department_mapping(cursor):
     cursor.execute("SELECT id, department_name FROM departments")
@@ -29,8 +29,10 @@ def load_programmes(cursor, connection):
 
     df = df.where(pd.notnull(df), None)
     dept_map = get_department_mapping(cursor)
-
-    inserted, skipped = 0, 0
+    
+    # Explicit types for linter
+    inserted: int = 0
+    skipped: int = 0
 
     for _, row in df.iterrows():
         raw_dept = str(row.get("departments", "")).strip()
@@ -65,10 +67,10 @@ def load_programmes(cursor, connection):
                 row.get("Subject_3"),
                 row.get("Subject_4")
             ))
-            inserted += 1
+            inserted += 1 # type: ignore
         except Error as e:
             print(f"❌ Programme insert failed: {e}")
-            skipped += 1
+            skipped += 1 # type: ignore
 
     connection.commit()
     print(f"✅ Inserted: {inserted} programmes")

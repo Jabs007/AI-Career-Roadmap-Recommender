@@ -14,7 +14,7 @@ try:
         "LAW", "ARCHITECT", "VETERINARY", "NURSING", "QUANTITY SURVEYING", "GEOSPATIAL"
     ]
 
-    count = 0
+    count: int = 0
     for course, req in data.items():
         course_upper = course.upper()
         
@@ -24,7 +24,7 @@ try:
             # Relax B- to C+ (Statutory University Entry)
             if req.get("min_mean_grade") == "B-":
                  req["min_mean_grade"] = "C+"
-                 count += 1
+                 count += 1 # type: ignore
 
     print(f"SUCCESS: Relaxed {count} courses to Mean Grade C+.")
 

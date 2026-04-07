@@ -4,7 +4,7 @@ import os
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from models.recommender import CareerRecommender
+from models.recommender import CareerRecommender # type: ignore
 
 def evaluate_interest_baseline():
     """
